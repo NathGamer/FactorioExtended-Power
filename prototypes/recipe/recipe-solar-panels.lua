@@ -21,7 +21,7 @@ data:extend(
     ingredients =
     {
       {"solar-panel-mk2", 4},
-      {"titanium-plate", 15},
+      {"titanium-alloy", 15},
       {"processing-unit", 10}
     },
     result = "solar-panel-mk3"
