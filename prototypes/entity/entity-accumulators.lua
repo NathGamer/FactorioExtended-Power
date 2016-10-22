@@ -64,6 +64,22 @@ data:extend(
       },
       max_sounds_per_type = 5
     },
+    circuit_wire_connection_point =
+    {
+      shadow =
+      {
+        red = {0.984375, 1.10938},
+        green = {0.890625, 1.10938}
+      },
+      wire =
+      {
+        red = {0.6875, 0.59375},
+        green = {0.6875, 0.71875}
+      }
+    },
+    circuit_connector_sprites = get_circuit_connector_sprites({0.46875, 0.5}, {0.46875, 0.8125}, 26),
+    circuit_wire_max_distance = 7.5,
+    default_output_signal = "signal-A"
   },
   {
     type = "accumulator",
@@ -129,5 +145,21 @@ data:extend(
       },
       max_sounds_per_type = 5
     },
+    circuit_wire_connection_point =
+    {
+      shadow =
+      {
+        red = {0.984375, 1.10938},
+        green = {0.890625, 1.10938}
+      },
+      wire =
+      {
+        red = {0.6875, 0.59375},
+        green = {0.6875, 0.71875}
+      }
+    },
+    circuit_connector_sprites = get_circuit_connector_sprites({0.46875, 0.5}, {0.46875, 0.8125}, 26),
+    circuit_wire_max_distance = 7.5,
+    default_output_signal = "signal-A"
   }
 })
