@@ -1,3 +1,6 @@
+-- extend stock electric substation, adding the fast-change group.
+data.raw["electric-pole"]["substation"].fast_replaceable_group = "substation"
+
 data:extend({
 {
   type = "electric-pole",
@@ -127,7 +130,7 @@ data:extend({
     width = 224,
     height = 46
   },
-  fast_replaceable_group = "electric-pole-2x2"  
+  fast_replaceable_group = "substation",
 },
 
 
@@ -259,6 +262,6 @@ data:extend({
     width = 224,
     height = 46
   },
-  fast_replaceable_group = "electric-pole-2x2"  
+  fast_replaceable_group = "substation",
 }
 })

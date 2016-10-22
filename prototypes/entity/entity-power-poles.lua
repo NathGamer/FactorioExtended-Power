@@ -1,5 +1,10 @@
+-- extend stock electric poles, adding the fast-change group.
+data.raw["electric-pole"]["medium-electric-pole"].fast_replaceable_group = "medium-electric-pole"
+data.raw["electric-pole"]["big-electric-pole"].fast_replaceable_group = "big-electric-pole"
+
 data:extend(
 {
+  -- big poles
   {
     type = "electric-pole",
     name = "big-electric-pole-mk2",
@@ -196,7 +201,7 @@ data:extend(
   },
   
   
-  
+  -- medium poles
   {
     type = "electric-pole",
     name = "medium-electric-pole-mk2",
