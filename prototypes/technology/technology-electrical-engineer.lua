@@ -62,27 +62,27 @@ data:extend(
         type = "unlock-recipe",
         recipe = "solar-panel-mk3"
       },
-	  {
+      {
         type = "unlock-recipe",
         recipe = "accumulator-mk3"
       },
-	  {
+      {
         type = "unlock-recipe",
         recipe = "substation-mk3"
       },
-	  {
+      {
         type = "unlock-recipe",
         recipe = "big-electric-pole-mk3"
       },
-	  {
+      {
         type = "unlock-recipe",
         recipe = "medium-electric-pole-mk3"
       },
-	  {
+      {
         type = "unlock-recipe",
         recipe = "steam-engine-mk3"
       },
-	  {
+      {
         type = "unlock-recipe",
         recipe = "boiler-mk3"
       }

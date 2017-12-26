@@ -5,6 +5,7 @@ data:extend({
     type = "generator",
     name = "steam-engine-mk2",
     icon = "__FactorioExtended-Power__/graphics/icons/steam-engine-mk2.png",
+    icon_size = 32,
     flags = {"placeable-neutral","player-creation"},
     minable = {mining_time = 1, result = "steam-engine-mk2"},
     max_health = 600,
@@ -38,7 +39,9 @@ data:extend({
         { type = "input-output", position = {0, 3} },
         { type = "input-output", position = {0, -3} },
       },
-      production_type = "input-output"
+      production_type = "input-output",
+      filter = "steam",
+      minimum_temperature = 100.0
     },
     fluid_input =
     {
@@ -164,10 +167,11 @@ data:extend({
     type = "generator",
     name = "steam-engine-mk3",
     icon = "__FactorioExtended-Power__/graphics/icons/steam-engine-mk3.png",
+    icon_size = 32,
     flags = {"placeable-neutral","player-creation"},
     minable = {mining_time = 1, result = "steam-engine-mk3"},
     max_health = 3000,
-	fast_replaceable_group = "steam-engine",
+    fast_replaceable_group = "steam-engine",
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
     effectivity = 1.5,
@@ -198,7 +202,9 @@ data:extend({
         { type = "input-output", position = {0, 3} },
         { type = "input-output", position = {0, -3} },
       },
-      production_type = "input-output"
+      production_type = "input-output",
+      filter = "steam",
+      minimum_temperature = 100.0
     },
     fluid_input =
     {
@@ -326,13 +332,14 @@ data:extend({
     type = "boiler",
     name = "boiler-mk2",
     icon = "__FactorioExtended-Power__/graphics/icons/boiler-mk2.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "boiler-mk2"},
     max_health = 400,
     corpse = "small-remnants",
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     mode = "output-to-separate-pipe",
-	resistances =
+    resistances =
     {
       {
         type = "fire",
@@ -777,6 +784,7 @@ data:extend({
     type = "boiler",
     name = "boiler-mk3",
     icon = "__FactorioExtended-Power__/graphics/icons/boiler-mk3.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "boiler-mk3"},
     max_health = 2000,

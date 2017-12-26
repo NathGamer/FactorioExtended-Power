@@ -1,3 +1,5 @@
+require ("circuit-connector-generated-definitions")
+
 data.raw.accumulator["accumulator"].fast_replaceable_group = "accumulator"
 
 data:extend(
@@ -6,10 +8,11 @@ data:extend(
     type = "accumulator",
     name = "accumulator-mk2",
     icon = "__FactorioExtended-Power__/graphics/icons/accumulator-mk2.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "accumulator-mk2"},
     max_health = 300,
-	fast_replaceable_group = "accumulator",
+    fast_replaceable_group = "accumulator",
     corpse = "medium-remnants",
     collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
     selection_box = {{-1, -1}, {1, 1}},
@@ -80,7 +83,8 @@ data:extend(
         green = {0.6875, 0.71875}
       }
     },
-    circuit_connector_sprites = get_circuit_connector_sprites({0.46875, 0.5}, {0.46875, 0.8125}, 26),
+    circuit_wire_connection_point = circuit_connector_definitions["accumulator"].points,
+    circuit_connector_sprites = circuit_connector_definitions["accumulator"].sprites,
     circuit_wire_max_distance = 7.5,
     default_output_signal = {type = "virtual", name = "signal-A"}
   },
@@ -88,6 +92,7 @@ data:extend(
     type = "accumulator",
     name = "accumulator-mk3",
     icon = "__FactorioExtended-Power__/graphics/icons/accumulator-mk3.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "accumulator-mk3"},
     max_health = 600,
@@ -149,7 +154,7 @@ data:extend(
       },
       max_sounds_per_type = 5
     },
-	circuit_wire_connection_point =
+    circuit_wire_connection_point =
     {
       shadow =
       {
@@ -162,7 +167,8 @@ data:extend(
         green = {0.6875, 0.71875}
       }
     },
-    circuit_connector_sprites = get_circuit_connector_sprites({0.46875, 0.5}, {0.46875, 0.8125}, 26),
+    circuit_wire_connection_point = circuit_connector_definitions["accumulator"].points,
+    circuit_connector_sprites = circuit_connector_definitions["accumulator"].sprites,
     circuit_wire_max_distance = 7.5,
     default_output_signal = {type = "virtual", name = "signal-A"}
   }
