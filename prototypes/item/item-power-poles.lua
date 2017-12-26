@@ -3,7 +3,7 @@ data:extend(
   {
     type = "item",
     name = "big-electric-pole-mk2",
-    icon = "__FactorioExtended-Core__/graphics/icons/big-electric-pole-mk2.png",
+    icon = "__FactorioExtended-Power__/graphics/icons/big-electric-pole-mk2.png",
     flags = {"goes-to-quickbar"},
     subgroup = "fb-energy-transfer",
     order = "a[big-electric-pole-mk2]-c",
@@ -13,7 +13,7 @@ data:extend(
   {
     type = "item",
     name = "big-electric-pole-mk3",
-    icon = "__FactorioExtended-Core__/graphics/icons/big-electric-pole-mk3.png",
+    icon = "__FactorioExtended-Power__/graphics/icons/big-electric-pole-mk3.png",
     flags = {"goes-to-quickbar"},
     subgroup = "fb-energy-transfer",
     order = "a[big-electric-pole-mk3]-d",
@@ -25,7 +25,7 @@ data:extend(
     {
     type = "item",
     name = "medium-electric-pole-mk2",
-    icon = "__FactorioExtended-Core__/graphics/icons/medium-electric-pole-mk2.png",
+    icon = "__FactorioExtended-Power__/graphics/icons/medium-electric-pole-mk2.png",
     flags = {"goes-to-quickbar"},
     subgroup = "fb-energy-transfer",
     order = "a[medium-electric-pole-mk2]-a",
@@ -35,7 +35,7 @@ data:extend(
   {
     type = "item",
     name = "medium-electric-pole-mk3",
-    icon = "__FactorioExtended-Core__/graphics/icons/medium-electric-pole-mk3.png",
+    icon = "__FactorioExtended-Power__/graphics/icons/medium-electric-pole-mk3.png",
     flags = {"goes-to-quickbar"},
     subgroup = "fb-energy-transfer",
     order = "a[medium-electric-pole-mk3]-b",

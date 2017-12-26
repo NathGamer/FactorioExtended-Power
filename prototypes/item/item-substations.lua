@@ -3,7 +3,7 @@ data:extend(
 {
   type = "item",
   name = "substation-mk2",
-  icon = "__FactorioExtended-Core__/graphics/icons/substation-mk2.png",
+  icon = "__FactorioExtended-Power__/graphics/icons/substation-mk2.png",
   flags = {"goes-to-quickbar"},
   subgroup = "fb-energy-transfer",
   order = "a[substation-mk2]-e",
@@ -13,7 +13,7 @@ data:extend(
 {
   type = "item",
   name = "substation-mk3",
-  icon = "__FactorioExtended-Core__/graphics/icons/substation-mk3.png",
+  icon = "__FactorioExtended-Power__/graphics/icons/substation-mk3.png",
   flags = {"goes-to-quickbar"},
   subgroup = "fb-energy-transfer",
   order = "a[substation-mk3]-f",

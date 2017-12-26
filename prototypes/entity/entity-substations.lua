@@ -2,7 +2,7 @@ data:extend({
 {
   type = "electric-pole",
   name = "substation-mk2",
-  icon = "__FactorioExtended-Core__/graphics/icons/substation-mk2.png",
+  icon = "__FactorioExtended-Power__/graphics/icons/substation-mk2.png",
   flags = {"placeable-neutral", "player-creation"},
   minable = {hardness = 0.2, mining_time = 0.5, result = "substation-mk2"},
   max_health = 200,
@@ -21,7 +21,7 @@ data:extend({
   supply_area_distance = 14,
   pictures =
   {
-    filename = "__FactorioExtended-Core__/graphics/entity/substations/substation-mk2.png",
+    filename = "__FactorioExtended-Power__/graphics/entity/substations/substation-mk2.png",
     priority = "high",
     width = 132,
     height = 144,
@@ -134,7 +134,7 @@ data:extend({
 {
   type = "electric-pole",
   name = "substation-mk3",
-  icon = "__FactorioExtended-Core__/graphics/icons/substation-mk3.png",
+  icon = "__FactorioExtended-Power__/graphics/icons/substation-mk3.png",
   flags = {"placeable-neutral", "player-creation"},
   minable = {hardness = 0.2, mining_time = 0.5, result = "substation-mk3"},
   max_health = 200,
@@ -153,7 +153,7 @@ data:extend({
   supply_area_distance = 21,
   pictures =
   {
-    filename = "__FactorioExtended-Core__/graphics/entity/substations/substation-mk3.png",
+    filename = "__FactorioExtended-Power__/graphics/entity/substations/substation-mk3.png",
     priority = "high",
     width = 132,
     height = 144,
