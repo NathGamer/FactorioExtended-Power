@@ -3,7 +3,8 @@ data:extend(
   {
     type = "item",
     name = "solar-panel-mk2",
-    icon = "__FactorioExtended-Core__/graphics/icons/solar-panel-mk2.png",
+    icon = "__FactorioExtended-Power__/graphics/icons/solar-panel-mk2.png",
+    icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "fb-energy-production",
     order = "a[solar-panel-mk2]-a",
@@ -13,7 +14,8 @@ data:extend(
   {
     type = "item",
     name = "solar-panel-mk3",
-    icon = "__FactorioExtended-Core__/graphics/icons/solar-panel-mk3.png",
+    icon = "__FactorioExtended-Power__/graphics/icons/solar-panel-mk3.png",
+    icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "fb-energy-production",
     order = "a[solar-panel-mk3]-b",

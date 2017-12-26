@@ -1,12 +1,18 @@
+require ("circuit-connector-generated-definitions")
+
+data.raw.accumulator["accumulator"].fast_replaceable_group = "accumulator"
+
 data:extend(
 {
   {
     type = "accumulator",
     name = "accumulator-mk2",
-    icon = "__FactorioExtended-Core__/graphics/icons/accumulator-mk2.png",
+    icon = "__FactorioExtended-Power__/graphics/icons/accumulator-mk2.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "accumulator-mk2"},
-    max_health = 150,
+    max_health = 300,
+    fast_replaceable_group = "accumulator",
     corpse = "medium-remnants",
     collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
     selection_box = {{-1, -1}, {1, 1}},
@@ -20,7 +26,7 @@ data:extend(
     },
     picture =
     {
-      filename = "__FactorioExtended-Core__/graphics/entity/accumulators/accumulator-mk2.png",
+      filename = "__FactorioExtended-Power__/graphics/entity/accumulators/accumulator-mk2.png",
       priority = "extra-high",
       width = 124,
       height = 103,
@@ -28,7 +34,7 @@ data:extend(
     },
     charge_animation =
     {
-      filename = "__FactorioExtended-Core__/graphics/entity/accumulators/accumulator-mk2-charge-animation.png",
+      filename = "__FactorioExtended-Power__/graphics/entity/accumulators/accumulator-mk2-charge-animation.png",
       width = 138,
       height = 135,
       line_length = 8,
@@ -40,7 +46,7 @@ data:extend(
     charge_light = {intensity = 0.3, size = 7},
     discharge_animation =
     {
-      filename = "__FactorioExtended-Core__/graphics/entity/accumulators/accumulator-mk2-discharge-animation.png",
+      filename = "__FactorioExtended-Power__/graphics/entity/accumulators/accumulator-mk2-discharge-animation.png",
       width = 147,
       height = 128,
       line_length = 8,
@@ -50,28 +56,47 @@ data:extend(
     },
     discharge_cooldown = 60,
     discharge_light = {intensity = 0.7, size = 7},
-    vehicle_impact_sound =  { filename = "__FactorioExtended-Core__/sound/car-metal-impact.ogg", volume = 0.65 },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound =
     {
       sound =
       {
-        filename = "__FactorioExtended-Core__/sound/accumulator-working.ogg",
+        filename = "__base__/sound/accumulator-working.ogg",
         volume = 1
       },
       idle_sound = {
-        filename = "__FactorioExtended-Core__/sound/accumulator-idle.ogg",
+        filename = "__base__/sound/accumulator-idle.ogg",
         volume = 0.4
       },
       max_sounds_per_type = 5
     },
+	circuit_wire_connection_point =
+    {
+      shadow =
+      {
+        red = {0.984375, 1.10938},
+        green = {0.890625, 1.10938}
+      },
+      wire =
+      {
+        red = {0.6875, 0.59375},
+        green = {0.6875, 0.71875}
+      }
+    },
+    circuit_wire_connection_point = circuit_connector_definitions["accumulator"].points,
+    circuit_connector_sprites = circuit_connector_definitions["accumulator"].sprites,
+    circuit_wire_max_distance = 7.5,
+    default_output_signal = {type = "virtual", name = "signal-A"}
   },
   {
     type = "accumulator",
     name = "accumulator-mk3",
-    icon = "__FactorioExtended-Core__/graphics/icons/accumulator-mk3.png",
+    icon = "__FactorioExtended-Power__/graphics/icons/accumulator-mk3.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "accumulator-mk3"},
     max_health = 600,
+	fast_replaceable_group = "accumulator",
     corpse = "medium-remnants",
     collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
     selection_box = {{-1, -1}, {1, 1}},
@@ -85,7 +110,7 @@ data:extend(
     },
     picture =
     {
-      filename = "__FactorioExtended-Core__/graphics/entity/accumulators/accumulator-mk3.png",
+      filename = "__FactorioExtended-Power__/graphics/entity/accumulators/accumulator-mk3.png",
       priority = "extra-high",
       width = 124,
       height = 103,
@@ -93,7 +118,7 @@ data:extend(
     },
     charge_animation =
     {
-      filename = "__FactorioExtended-Core__/graphics/entity/accumulators/accumulator-mk3-charge-animation.png",
+      filename = "__FactorioExtended-Power__/graphics/entity/accumulators/accumulator-mk3-charge-animation.png",
       width = 138,
       height = 135,
       line_length = 8,
@@ -105,7 +130,7 @@ data:extend(
     charge_light = {intensity = 0.3, size = 7},
     discharge_animation =
     {
-      filename = "__FactorioExtended-Core__/graphics/entity/accumulators/accumulator-mk3-discharge-animation.png",
+      filename = "__FactorioExtended-Power__/graphics/entity/accumulators/accumulator-mk3-discharge-animation.png",
       width = 147,
       height = 128,
       line_length = 8,
@@ -115,19 +140,36 @@ data:extend(
     },
     discharge_cooldown = 60,
     discharge_light = {intensity = 0.7, size = 7},
-    vehicle_impact_sound =  { filename = "__FactorioExtended-Core__/sound/car-metal-impact.ogg", volume = 0.65 },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound =
     {
       sound =
       {
-        filename = "__FactorioExtended-Core__/sound/accumulator-working.ogg",
+        filename = "__base__/sound/accumulator-working.ogg",
         volume = 1
       },
       idle_sound = {
-        filename = "__FactorioExtended-Core__/sound/accumulator-idle.ogg",
+        filename = "__base__/sound/accumulator-idle.ogg",
         volume = 0.4
       },
       max_sounds_per_type = 5
     },
+    circuit_wire_connection_point =
+    {
+      shadow =
+      {
+        red = {0.984375, 1.10938},
+        green = {0.890625, 1.10938}
+      },
+      wire =
+      {
+        red = {0.6875, 0.59375},
+        green = {0.6875, 0.71875}
+      }
+    },
+    circuit_wire_connection_point = circuit_connector_definitions["accumulator"].points,
+    circuit_connector_sprites = circuit_connector_definitions["accumulator"].sprites,
+    circuit_wire_max_distance = 7.5,
+    default_output_signal = {type = "virtual", name = "signal-A"}
   }
 })

@@ -3,7 +3,8 @@ data:extend(
   {
     type = "item",
     name = "accumulator-mk2",
-    icon = "__FactorioExtended-Core__/graphics/icons/accumulator-mk2.png",
+    icon = "__FactorioExtended-Power__/graphics/icons/accumulator-mk2.png",
+    icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "fb-energy-production",
     order = "a[accumulator-mk2]-c",
@@ -13,7 +14,8 @@ data:extend(
   {
     type = "item",
     name = "accumulator-mk3",
-    icon = "__FactorioExtended-Core__/graphics/icons/accumulator-mk3.png",
+    icon = "__FactorioExtended-Power__/graphics/icons/accumulator-mk3.png",
+    icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "fb-energy-production",
     order = "a[accumulator-mk3]-d",
