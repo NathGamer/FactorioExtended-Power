@@ -2,11 +2,13 @@ data:extend({
 {
   type = "electric-pole",
   name = "substation-mk2",
-  icon = "__FactorioExtended-Core__/graphics/icons/substation-mk2.png",
+  icon_size = 32,
+  icon = "__FactorioExtended-Power__/graphics/icons/substation-mk2.png",
   flags = {"placeable-neutral", "player-creation"},
   minable = {hardness = 0.2, mining_time = 0.5, result = "substation-mk2"},
-  max_health = 200,
+  max_health = 400,
   corpse = "medium-remnants",
+  track_coverage_during_build_by_moving = true,
   resistances = 
   {
     {
@@ -21,7 +23,7 @@ data:extend({
   supply_area_distance = 14,
   pictures =
   {
-    filename = "__FactorioExtended-Core__/graphics/entity/substations/substation-mk2.png",
+    filename = "__FactorioExtended-Power__/graphics/entity/substations/substation-mk2.png",
     priority = "high",
     width = 132,
     height = 144,
@@ -29,10 +31,13 @@ data:extend({
     direction_count = 4,
     shift = {0.9, -1}
   },
+  vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
   working_sound =
   {
     sound = { filename = "__base__/sound/substation.ogg" },
     apparent_volume = 1.5,
+    audible_distance_modifier = 0.5,
+    probability = 1 / (3 * 60) -- average pause between the sound is 3 seconds
   },
   connection_points =
   {
@@ -93,39 +98,11 @@ data:extend({
       }
     }
   },
-  copper_wire_picture =
-  {
-    filename = "__base__/graphics/entity/small-electric-pole/copper-wire.png",
-    priority = "extra-high-no-scale",
-    width = 224,
-    height = 46
-  },
-  green_wire_picture =
-  {
-    filename = "__base__/graphics/entity/small-electric-pole/green-wire.png",
-    priority = "extra-high-no-scale",
-    width = 224,
-    height = 46
-  },
   radius_visualisation_picture =
   {
     filename = "__base__/graphics/entity/small-electric-pole/electric-pole-radius-visualization.png",
     width = 12,
     height = 12
-  },
-  red_wire_picture =
-  {
-    filename = "__base__/graphics/entity/small-electric-pole/red-wire.png",
-    priority = "extra-high-no-scale",
-    width = 224,
-    height = 46
-  },
-  wire_shadow_picture =
-  {
-    filename = "__base__/graphics/entity/small-electric-pole/wire-shadow.png",
-    priority = "extra-high-no-scale",
-    width = 224,
-    height = 46
   },
   fast_replaceable_group = "electric-pole-2x2"  
 },
@@ -134,11 +111,13 @@ data:extend({
 {
   type = "electric-pole",
   name = "substation-mk3",
-  icon = "__FactorioExtended-Core__/graphics/icons/substation-mk3.png",
+	icon_size = 32,
+  icon = "__FactorioExtended-Power__/graphics/icons/substation-mk3.png",
   flags = {"placeable-neutral", "player-creation"},
   minable = {hardness = 0.2, mining_time = 0.5, result = "substation-mk3"},
-  max_health = 200,
+  max_health = 600,
   corpse = "medium-remnants",
+    track_coverage_during_build_by_moving = true,
   resistances = 
   {
     {
@@ -153,7 +132,7 @@ data:extend({
   supply_area_distance = 21,
   pictures =
   {
-    filename = "__FactorioExtended-Core__/graphics/entity/substations/substation-mk3.png",
+    filename = "__FactorioExtended-Power__/graphics/entity/substations/substation-mk3.png",
     priority = "high",
     width = 132,
     height = 144,
@@ -161,11 +140,14 @@ data:extend({
     direction_count = 4,
     shift = {0.9, -1}
   },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
   working_sound =
-  {
-    sound = { filename = "__base__/sound/substation.ogg" },
-    apparent_volume = 1.5,
-  },
+    {
+      sound = { filename = "__base__/sound/substation.ogg" },
+      apparent_volume = 1.5,
+      audible_distance_modifier = 0.5,
+      probability = 1 / (3 * 60) -- average pause between the sound is 3 seconds
+    },
   connection_points =
   {
     {
