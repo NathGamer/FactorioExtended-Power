@@ -196,9 +196,6 @@ data:extend(
       priority = "extra-high-no-scale"
     },
   },
-  
-  
-  
   {
     type = "electric-pole",
     name = "medium-electric-pole-mk2",
@@ -206,8 +203,10 @@ data:extend(
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "medium-electric-pole-mk2"},
-    max_health = 100,
+    max_health = 150,
     corpse = "small-remnants",
+    track_coverage_during_build_by_moving = true,
+    fast_replaceable_group = "electric-pole",
     resistances =
     {
       {
@@ -304,8 +303,10 @@ data:extend(
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "medium-electric-pole-mk3"},
-    max_health = 100,
+    max_health = 200,
     corpse = "small-remnants",
+    track_coverage_during_build_by_moving = true,
+    fast_replaceable_group = "electric-pole",
     resistances =
     {
       {

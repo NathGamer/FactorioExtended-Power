@@ -4,35 +4,35 @@ data:extend(
     type = "technology",
     name = "electrical-engineer",
     icon = "__FactorioExtended-Power__/graphics/technology/electrical-engineer.png",
-	icon_size = 128,
-	prerequisites = {"solar-energy", "electric-energy-accumulators-1", "electric-energy-distribution-2"},
+    icon_size = 128,
+    prerequisites = {"solar-energy", "electric-energy-accumulators-1", "electric-energy-distribution-2"},
     effects =
     {
       {
         type = "unlock-recipe",
         recipe = "solar-panel-mk2"
       },
-	  {
+      {
         type = "unlock-recipe",
         recipe = "accumulator-mk2"
       },
-	  {
+      {
         type = "unlock-recipe",
         recipe = "substation-mk2"
       },
-	  {
+      {
         type = "unlock-recipe",
         recipe = "big-electric-pole-mk2"
       },
-	  {
+      {
         type = "unlock-recipe",
         recipe = "medium-electric-pole-mk2"
       },
-	  {
+      {
         type = "unlock-recipe",
         recipe = "steam-engine-mk2"
       },
-	  {
+      {
         type = "unlock-recipe",
         recipe = "boiler-mk2"
       }
@@ -54,8 +54,8 @@ data:extend(
     type = "technology",
     name = "electrical-engineer-2",
     icon = "__FactorioExtended-Power__/graphics/technology/electrical-engineer.png",
-	icon_size = 128,
-	prerequisites = {"electrical-engineer", "titanium-processing"},
+    icon_size = 128,
+    prerequisites = {"electrical-engineer", "titanium-processing"},
     effects =
     {
       {

@@ -11,8 +11,8 @@ data:extend({
     max_health = 600,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
-    effectivity = 1.5,
-    fluid_usage_per_tick = 0.5,
+    effectivity = 1,
+    fluid_usage_per_tick = 1,
     maximum_temperature = 165,
     resistances =
     {
@@ -170,12 +170,12 @@ data:extend({
     icon_size = 32,
     flags = {"placeable-neutral","player-creation"},
     minable = {mining_time = 1, result = "steam-engine-mk3"},
-    max_health = 3000,
+    max_health = 1200,
     fast_replaceable_group = "steam-engine",
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
-    effectivity = 1.5,
-    fluid_usage_per_tick = 2.5,
+    effectivity = 2.5,
+    fluid_usage_per_tick = 2,
     maximum_temperature = 165,
     resistances =
     {
@@ -326,8 +326,6 @@ data:extend({
     min_perceived_performance = 0.25,
     performance_to_sound_speedup = 0.5
   },
-  
-  
   {
     type = "boiler",
     name = "boiler-mk2",
@@ -383,7 +381,7 @@ data:extend({
       },
       production_type = "output"
     },
-	fluid_input =
+  fluid_input =
     {
       name = "water",
       amount = 0.0
@@ -393,12 +391,12 @@ data:extend({
       name = "steam",
       amount = 0.0
     }, 
-    energy_consumption = "2MW", --Machines fule requirement
+    energy_consumption = "3.6MW", --Machines fule requirement
     energy_source =
     {
       type = "burner",
       fuel_category = "chemical",
-      effectivity = 0.75, --Machines effectiveness
+      effectivity = 1, --Machines effectiveness
       fuel_inventory_size = 1, --Inventory Size in the machine
       emissions = 0.1 / 9.5, --Polution given from machine (0.01052631578947368421052631578947)
       smoke =
@@ -424,7 +422,7 @@ data:extend({
       },
       max_sounds_per_type = 3
     },
-	
+  
     structure =
     {
       north =
@@ -787,11 +785,11 @@ data:extend({
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "boiler-mk3"},
-    max_health = 2000,
+    max_health = 600,
     corpse = "small-remnants",
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     mode = "output-to-separate-pipe",
-	resistances =
+    resistances =
     {
       {
         type = "fire",
@@ -827,6 +825,7 @@ data:extend({
     {
       base_area = 1,
       height = 2,
+      base_level = 1,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
@@ -834,7 +833,7 @@ data:extend({
       },
       production_type = "output"
     },
-	fluid_input =
+    fluid_input =
     {
       name = "water",
       amount = 0.0
@@ -844,14 +843,14 @@ data:extend({
       name = "steam",
       amount = 0.0
     }, 
-    energy_consumption = "10MW", --Machines fule requirement
+    energy_consumption = "18MW", --Machines fule requirement
     energy_source =
     {
       type = "burner",
       fuel_category = "chemical",
-      effectivity = 3.75, --Machines effectiveness
+      effectivity = 5, --Machines effectiveness
       fuel_inventory_size = 1, --Inventory Size in the machine
-      emissions = 0.1 / 3.5, --Polution given from machine (0.01052631578947368421052631578947)
+      emissions = 0.1 / 10.5, --Polution given from machine (0.01052631578947368421052631578947)
       smoke =
       {
         {
