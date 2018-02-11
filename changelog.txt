@@ -1,0 +1,6 @@
+Version: 0.3.3
+Date: 02. 10. 2018
+
+  Changes :
+    - Added Fast replaceable to accumulators
+    - Changed collision box for vanilla solar panels and accumulators

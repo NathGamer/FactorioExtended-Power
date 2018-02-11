@@ -1,6 +1,6 @@
 require ("circuit-connector-generated-definitions")
 
-data.raw.accumulator["accumulator"].fast_replaceable_group = "accumulator"
+
 
 data:extend(
 {
@@ -151,7 +151,7 @@ data:extend(
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "accumulator-mk3"},
     max_health = 450,
-	fast_replaceable_group = "accumulator",
+    fast_replaceable_group = "accumulator",
     corpse = "medium-remnants",
     collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
     selection_box = {{-1, -1}, {1, 1}},
