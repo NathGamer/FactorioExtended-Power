@@ -7,9 +7,9 @@ data:extend(
     ingredients =
     {
       {"steam-engine", 2},
-	  {"engine-unit", 2},
-	  {"titanium-alloy", 15},
-	  {"advanced-circuit", 5}
+      {"engine-unit", 2},
+      {"titanium-alloy", 15},
+      {"advanced-circuit", 5}
     },
     result = "steam-engine-mk2"
   },
@@ -20,14 +20,12 @@ data:extend(
     enabled = "false",
     ingredients =
     {
-      {"steam-engine-mk2", 10},
-	  {"titanium-alloy", 50},
-	  {"processing-unit", 50}
+      {"steam-engine-mk2", 2},
+      {"titanium-alloy", 50},
+      {"processing-unit", 50}
     },
     result = "steam-engine-mk3"
   },
-  
-  
   {
     type = "recipe",
     name = "boiler-mk2",
@@ -36,8 +34,8 @@ data:extend(
     ingredients =
     {
       {"boiler", 2},
-	  {"titanium-alloy", 15},
-	  {"advanced-circuit", 5}
+      {"titanium-alloy", 15},
+      {"advanced-circuit", 5}
     },
     result = "boiler-mk2"
   },
@@ -48,9 +46,9 @@ data:extend(
     enabled = "false",
     ingredients =
     {
-      {"boiler-mk2", 10},
-	  {"titanium-alloy", 100},
-	  {"processing-unit", 50}
+      {"boiler-mk2", 1},
+      {"titanium-alloy", 50},
+      {"processing-unit", 50}
     },
     result = "boiler-mk3"
   }

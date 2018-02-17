@@ -1,7 +1,5 @@
 require ("circuit-connector-generated-definitions")
 
-
-
 data:extend(
 {
   {
@@ -121,6 +119,7 @@ data:extend(
       shift = {0.390625, -0.53125},
       animation_speed = 0.5
     },
+    
     discharge_cooldown = 60,
     discharge_light = {intensity = 0.7, size = 7, color = {r = 1.0, g = 1.0, b = 1.0}},
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },

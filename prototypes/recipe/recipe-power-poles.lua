@@ -24,11 +24,9 @@ data:extend(
     },
     result = "big-electric-pole-mk3"
   },
-  
-  
   {
     type = "recipe",
-	energy_required = 0.5,
+    energy_required = 0.5,
     name = "medium-electric-pole-mk2",
     enabled = false,
     ingredients =
@@ -40,7 +38,7 @@ data:extend(
   },
   {
     type = "recipe",
-	energy_required = 0.5,
+    energy_required = 0.5,
     name = "medium-electric-pole-mk3",
     enabled = false,
     ingredients =

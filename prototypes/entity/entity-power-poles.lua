@@ -9,6 +9,7 @@ data:extend(
     minable = {hardness = 0.2, mining_time = 0.5, result = "big-electric-pole-mk2"},
     max_health = 200,
     corpse = "medium-remnants",
+    fast_replaceable_group = "big-electric-pole",
     resistances =
     {
       {
@@ -107,6 +108,7 @@ data:extend(
     minable = {hardness = 0.2, mining_time = 0.5, result = "big-electric-pole-mk3"},
     max_health = 250,
     corpse = "medium-remnants",
+    fast_replaceable_group = "big-electric-pole",
     resistances =
     {
       {

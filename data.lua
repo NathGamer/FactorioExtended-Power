@@ -20,8 +20,10 @@ require("prototypes.technology.technology-electrical-engineer")
 
 data.raw["solar-panel"]["solar-panel"].fast_replaceable_group = "solar-panel"
 data.raw["solar-panel"]["solar-panel"].collision_box = {{-1.2, -1.2}, {1.2, 1.2}}
+data.raw["electric-pole"]["big-electric-pole"].fast_replaceable_group = "big-electric-pole"
 
 local accum = data.raw["accumulator"];
+local pole  = data.raw["electric-pole"];
 
 for _,accm in pairs(accum) do
   accm.collision_box = {{-0.7, -0.7}, {0.7, 0.7}}

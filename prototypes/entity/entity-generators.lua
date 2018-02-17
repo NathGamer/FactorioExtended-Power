@@ -11,8 +11,8 @@ data:extend({
     max_health = 600,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
-    effectivity = 1,
-    fluid_usage_per_tick = 1,
+    effectivity = 1.5,
+    fluid_usage_per_tick = 0.75,
     maximum_temperature = 165,
     resistances =
     {
@@ -174,8 +174,8 @@ data:extend({
     fast_replaceable_group = "steam-engine",
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
-    effectivity = 2.5,
-    fluid_usage_per_tick = 2,
+    effectivity = 2,
+    fluid_usage_per_tick = 1,
     maximum_temperature = 165,
     resistances =
     {
@@ -367,7 +367,8 @@ data:extend({
         {type = "input-output", position = {-2, 0.5}},
         {type = "input-output", position = {2, 0.5}}
       },
-      production_type = "input-output"
+      production_type = "input-output",
+      filter = "water"
     },
     output_fluid_box =
     {
@@ -379,9 +380,10 @@ data:extend({
       {
         {type = "output", position = {0, -1.5}}
       },
-      production_type = "output"
+      production_type = "output",
+      filter = "steam"
     },
-  fluid_input =
+    fluid_input =
     {
       name = "water",
       amount = 0.0
@@ -391,14 +393,14 @@ data:extend({
       name = "steam",
       amount = 0.0
     }, 
-    energy_consumption = "3.6MW", --Machines fule requirement
+    energy_consumption = "3.6MW", 
     energy_source =
     {
       type = "burner",
       fuel_category = "chemical",
-      effectivity = 1, --Machines effectiveness
-      fuel_inventory_size = 1, --Inventory Size in the machine
-      emissions = 0.1 / 9.5, --Polution given from machine (0.01052631578947368421052631578947)
+      effectivity = 0.75, 
+      fuel_inventory_size = 1, 
+      emissions = 0.1 / 9.5,
       smoke =
       {
         {
@@ -819,7 +821,8 @@ data:extend({
         {type = "input-output", position = {-2, 0.5}},
         {type = "input-output", position = {2, 0.5}}
       },
-      production_type = "input-output"
+      production_type = "input-output",
+      filter = "water"
     },
     output_fluid_box =
     {
@@ -831,7 +834,8 @@ data:extend({
       {
         {type = "output", position = {0, -1.5}}
       },
-      production_type = "output"
+      production_type = "output",
+      filter = "steam"
     },
     fluid_input =
     {
@@ -843,14 +847,14 @@ data:extend({
       name = "steam",
       amount = 0.0
     }, 
-    energy_consumption = "18MW", --Machines fule requirement
+    energy_consumption = "7.2MW",
     energy_source =
     {
       type = "burner",
       fuel_category = "chemical",
-      effectivity = 5, --Machines effectiveness
-      fuel_inventory_size = 1, --Inventory Size in the machine
-      emissions = 0.1 / 10.5, --Polution given from machine (0.01052631578947368421052631578947)
+      effectivity = 0.99,
+      fuel_inventory_size = 1,
+      emissions = 0.1 / 10.5,
       smoke =
       {
         {
