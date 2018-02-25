@@ -2,7 +2,7 @@ data:extend({
   {
     type = "item",
     name = "steam-engine-mk2",
-    icon = "__FactorioExtended-Power__/graphics/icons/steam-engine-mk2.png",
+    icon = "__FactorioExtended-Plus-Power__/graphics/icons/steam-engine-mk2.png",
     icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "fb-energy-production",
@@ -13,7 +13,7 @@ data:extend({
   {
     type = "item",
     name = "steam-engine-mk3",
-    icon = "__FactorioExtended-Power__/graphics/icons/steam-engine-mk3.png",
+    icon = "__FactorioExtended-Plus-Power__/graphics/icons/steam-engine-mk3.png",
     icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "fb-energy-production",
@@ -26,7 +26,7 @@ data:extend({
   {
     type = "item",
     name = "boiler-mk2",
-    icon = "__FactorioExtended-Power__/graphics/icons/boiler-mk2.png",
+    icon = "__FactorioExtended-Plus-Power__/graphics/icons/boiler-mk2.png",
     icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "fb-energy-production",
@@ -37,7 +37,7 @@ data:extend({
   {
     type = "item",
     name = "boiler-mk3",
-    icon = "__FactorioExtended-Power__/graphics/icons/boiler-mk3.png",
+    icon = "__FactorioExtended-Plus-Power__/graphics/icons/boiler-mk3.png",
     icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "fb-energy-production",

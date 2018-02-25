@@ -5,7 +5,7 @@ data:extend(
   {
     type = "accumulator",
     name = "accumulator-mk2",
-    icon = "__FactorioExtended-Power__/graphics/icons/accumulator-mk2.png",
+    icon = "__FactorioExtended-Plus-Power__/graphics/icons/accumulator-mk2.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "accumulator-mk2"},
@@ -24,7 +24,7 @@ data:extend(
     },
     picture =
     {
-      filename = "__FactorioExtended-Power__/graphics/entity/accumulators/accumulator-mk2.png",
+      filename = "__FactorioExtended-Plus-Power__/graphics/entity/accumulators/accumulator-mk2.png",
       priority = "extra-high",
       width = 124,
       height = 103,
@@ -32,7 +32,7 @@ data:extend(
     },
     charge_animation =
     {
-      filename = "__FactorioExtended-Power__/graphics/entity/accumulators/accumulator-mk2-charge-animation.png",
+      filename = "__FactorioExtended-Plus-Power__/graphics/entity/accumulators/accumulator-mk2-charge-animation.png",
       width = 138,
       height = 135,
       line_length = 8,
@@ -111,7 +111,7 @@ data:extend(
     charge_light = {intensity = 0.3, size = 7, color = {r = 1.0, g = 1.0, b = 1.0}},
     discharge_animation =
     {
-      filename = "__FactorioExtended-Power__/graphics/entity/accumulators/accumulator-mk2-discharge-animation.png",
+      filename = "__FactorioExtended-Plus-Power__/graphics/entity/accumulators/accumulator-mk2-discharge-animation.png",
       width = 147,
       height = 128,
       line_length = 8,
@@ -145,7 +145,7 @@ data:extend(
   {
     type = "accumulator",
     name = "accumulator-mk3",
-    icon = "__FactorioExtended-Power__/graphics/icons/accumulator-mk3.png",
+    icon = "__FactorioExtended-Plus-Power__/graphics/icons/accumulator-mk3.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "accumulator-mk3"},
@@ -164,7 +164,7 @@ data:extend(
     },
     picture =
     {
-      filename = "__FactorioExtended-Power__/graphics/entity/accumulators/accumulator-mk3.png",
+      filename = "__FactorioExtended-Plus-Power__/graphics/entity/accumulators/accumulator-mk3.png",
       priority = "extra-high",
       width = 124,
       height = 103,
@@ -172,7 +172,7 @@ data:extend(
     },
     charge_animation =
     {
-      filename = "__FactorioExtended-Power__/graphics/entity/accumulators/accumulator-mk3-charge-animation.png",
+      filename = "__FactorioExtended-Plus-Power__/graphics/entity/accumulators/accumulator-mk3-charge-animation.png",
       width = 138,
       height = 135,
       line_length = 8,
@@ -251,7 +251,7 @@ data:extend(
     charge_light = {intensity = 0.3, size = 7, color = {r = 1.0, g = 1.0, b = 1.0}},
     discharge_animation =
     {
-      filename = "__FactorioExtended-Power__/graphics/entity/accumulators/accumulator-mk3-discharge-animation.png",
+      filename = "__FactorioExtended-Plus-Power__/graphics/entity/accumulators/accumulator-mk3-discharge-animation.png",
       width = 147,
       height = 128,
       line_length = 8,

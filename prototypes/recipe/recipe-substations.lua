@@ -7,7 +7,7 @@ data:extend(
   enabled = "false",
   ingredients =
   {
-	{"substation", 1},
+    {"substation", 1},
     {"advanced-circuit", 10},
     {"effectivity-module", 1}
   },
@@ -20,8 +20,8 @@ data:extend(
   enabled = "false",
   ingredients =
   {
-	{"substation-mk2", 1},
-	{"processing-unit", 10},
+    {"substation-mk2", 1},
+    {"processing-unit", 10},
     {"effectivity-module-2", 1}
   },
   result = "substation-mk3"

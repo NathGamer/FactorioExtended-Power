@@ -3,7 +3,7 @@ data:extend(
   {
     type = "electric-pole",
     name = "big-electric-pole-mk2",
-    icon = "__FactorioExtended-Power__/graphics/icons/big-electric-pole-mk2.png",
+    icon = "__FactorioExtended-Plus-Power__/graphics/icons/big-electric-pole-mk2.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "big-electric-pole-mk2"},
@@ -25,7 +25,7 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     pictures =
     {
-      filename = "__FactorioExtended-Power__/graphics/entity/power-poles/big-electric-pole-mk2.png",
+      filename = "__FactorioExtended-Plus-Power__/graphics/entity/power-poles/big-electric-pole-mk2.png",
       priority = "high",
       width = 168,
       height = 165,
@@ -102,7 +102,7 @@ data:extend(
   {
     type = "electric-pole",
     name = "big-electric-pole-mk3",
-    icon = "__FactorioExtended-Power__/graphics/icons/big-electric-pole-mk3.png",
+    icon = "__FactorioExtended-Plus-Power__/graphics/icons/big-electric-pole-mk3.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "big-electric-pole-mk3"},
@@ -124,7 +124,7 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     pictures =
     {
-      filename = "__FactorioExtended-Power__/graphics/entity/power-poles/big-electric-pole-mk3.png",
+      filename = "__FactorioExtended-Plus-Power__/graphics/entity/power-poles/big-electric-pole-mk3.png",
       priority = "high",
       width = 168,
       height = 165,
@@ -201,7 +201,7 @@ data:extend(
   {
     type = "electric-pole",
     name = "medium-electric-pole-mk2",
-    icon = "__FactorioExtended-Power__/graphics/icons/medium-electric-pole-mk2.png",
+    icon = "__FactorioExtended-Plus-Power__/graphics/icons/medium-electric-pole-mk2.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "medium-electric-pole-mk2"},
@@ -224,7 +224,7 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     pictures =
     {
-      filename = "__FactorioExtended-Power__/graphics/entity/power-poles/medium-electric-pole-mk2.png",
+      filename = "__FactorioExtended-Plus-Power__/graphics/entity/power-poles/medium-electric-pole-mk2.png",
       priority = "high",
       width = 136,
       height = 122,
@@ -301,7 +301,7 @@ data:extend(
   {
     type = "electric-pole",
     name = "medium-electric-pole-mk3",
-    icon = "__FactorioExtended-Power__/graphics/icons/medium-electric-pole-mk3.png",
+    icon = "__FactorioExtended-Plus-Power__/graphics/icons/medium-electric-pole-mk3.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "medium-electric-pole-mk3"},
@@ -324,7 +324,7 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     pictures =
     {
-      filename = "__FactorioExtended-Power__/graphics/entity/power-poles/medium-electric-pole-mk3.png",
+      filename = "__FactorioExtended-Plus-Power__/graphics/entity/power-poles/medium-electric-pole-mk3.png",
       priority = "high",
       width = 136,
       height = 122,

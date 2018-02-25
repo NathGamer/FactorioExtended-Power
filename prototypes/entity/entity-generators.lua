@@ -1,10 +1,10 @@
-data.raw.generator["steam-engine"].fast_replaceable_group = "steam-engine"
+
 
 data:extend({
   {
     type = "generator",
     name = "steam-engine-mk2",
-    icon = "__FactorioExtended-Power__/graphics/icons/steam-engine-mk2.png",
+    icon = "__FactorioExtended-Plus-Power__/graphics/icons/steam-engine-mk2.png",
     icon_size = 32,
     flags = {"placeable-neutral","player-creation"},
     minable = {mining_time = 1, result = "steam-engine-mk2"},
@@ -59,14 +59,14 @@ data:extend({
       layers =
       {
         {
-          filename = "__FactorioExtended-Power__/graphics/entity/steam-engine-mk2/steam-engine-H.png",
+          filename = "__FactorioExtended-Plus-Power__/graphics/entity/steam-engine-mk2/steam-engine-H.png",
           width = 176,
           height = 128,
           frame_count = 32,
           line_length = 8,
           shift = util.by_pixel(1, -5),
           hr_version = {
-            filename = "__FactorioExtended-Power__/graphics/entity/steam-engine-mk2/hr-steam-engine-H.png",
+            filename = "__FactorioExtended-Plus-Power__/graphics/entity/steam-engine-mk2/hr-steam-engine-H.png",
             width = 352,
             height = 257,
             frame_count = 32,
@@ -101,14 +101,14 @@ data:extend({
       layers = 
       {
         {
-          filename = "__FactorioExtended-Power__/graphics/entity/steam-engine-mk2/steam-engine-V.png",
+          filename = "__FactorioExtended-Plus-Power__/graphics/entity/steam-engine-mk2/steam-engine-V.png",
           width = 112,
           height = 195,
           frame_count = 32,
           line_length = 8,
           shift = util.by_pixel(5, -6.5),
           hr_version = {
-            filename = "__FactorioExtended-Power__/graphics/entity/steam-engine-mk2/hr-steam-engine-V.png",
+            filename = "__FactorioExtended-Plus-Power__/graphics/entity/steam-engine-mk2/hr-steam-engine-V.png",
             width = 225,
             height = 391,
             frame_count = 32,
@@ -166,7 +166,7 @@ data:extend({
   {
     type = "generator",
     name = "steam-engine-mk3",
-    icon = "__FactorioExtended-Power__/graphics/icons/steam-engine-mk3.png",
+    icon = "__FactorioExtended-Plus-Power__/graphics/icons/steam-engine-mk3.png",
     icon_size = 32,
     flags = {"placeable-neutral","player-creation"},
     minable = {mining_time = 1, result = "steam-engine-mk3"},
@@ -188,7 +188,6 @@ data:extend({
         percent = 30
       }
     },
-    fast_replaceable_group = "steam-engine",
     collision_box = {{-1.35, -2.35}, {1.35, 2.35}},
     selection_box = {{-1.5, -2.5}, {1.5, 2.5}},
     fluid_box =
@@ -222,14 +221,14 @@ data:extend({
       layers =
       {
         {
-          filename = "__FactorioExtended-Power__/graphics/entity/steam-engine-mk3/steam-engine-H.png",
+          filename = "__FactorioExtended-Plus-Power__/graphics/entity/steam-engine-mk3/steam-engine-H.png",
           width = 176,
           height = 128,
           frame_count = 32,
           line_length = 8,
           shift = util.by_pixel(1, -5),
           hr_version = {
-            filename = "__FactorioExtended-Power__/graphics/entity/steam-engine-mk3/hr-steam-engine-H.png",
+            filename = "__FactorioExtended-Plus-Power__/graphics/entity/steam-engine-mk3/hr-steam-engine-H.png",
             width = 352,
             height = 257,
             frame_count = 32,
@@ -264,14 +263,14 @@ data:extend({
       layers = 
       {
         {
-          filename = "__FactorioExtended-Power__/graphics/entity/steam-engine-mk3/steam-engine-V.png",
+          filename = "__FactorioExtended-Plus-Power__/graphics/entity/steam-engine-mk3/steam-engine-V.png",
           width = 112,
           height = 195,
           frame_count = 32,
           line_length = 8,
           shift = util.by_pixel(5, -6.5),
           hr_version = {
-            filename = "__FactorioExtended-Power__/graphics/entity/steam-engine-mk3/hr-steam-engine-V.png",
+            filename = "__FactorioExtended-Plus-Power__/graphics/entity/steam-engine-mk3/hr-steam-engine-V.png",
             width = 225,
             height = 391,
             frame_count = 32,
@@ -329,7 +328,7 @@ data:extend({
   {
     type = "boiler",
     name = "boiler-mk2",
-    icon = "__FactorioExtended-Power__/graphics/icons/boiler-mk2.png",
+    icon = "__FactorioExtended-Plus-Power__/graphics/icons/boiler-mk2.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "boiler-mk2"},
@@ -352,7 +351,7 @@ data:extend({
         percent = 30
       }
     },
-    fast_replaceable_group = "pipe",
+    fast_replaceable_group = "boiler",
     collision_box = {{-1.29, -0.79}, {1.29, 0.79}},
     selection_box = {{-1.5, -1}, {1.5, 1}},
     target_temperature = 165,
@@ -432,13 +431,13 @@ data:extend({
         layers = 
         { 
           {
-            filename = "__FactorioExtended-Power__/graphics/entity/boiler-mk2/boiler-N-idle.png",
+            filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk2/boiler-N-idle.png",
             priority = "extra-high",
             width = 131,
             height = 108,
             shift = util.by_pixel(-0.5, 4),
             hr_version = {
-              filename = "__FactorioExtended-Power__/graphics/entity/boiler-mk2/hr-boiler-N-idle.png",
+              filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk2/hr-boiler-N-idle.png",
               priority = "extra-high",
               width = 269,
               height = 221,
@@ -470,13 +469,13 @@ data:extend({
         layers = 
         { 
           {
-            filename = "__FactorioExtended-Power__/graphics/entity/boiler-mk2/boiler-E-idle.png",
+            filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk2/boiler-E-idle.png",
             priority = "extra-high",
             width = 105,
             height = 147,
             shift = util.by_pixel(-3.5, -0.5),
             hr_version = {
-              filename = "__FactorioExtended-Power__/graphics/entity/boiler-mk2/hr-boiler-E-idle.png",
+              filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk2/hr-boiler-E-idle.png",
               priority = "extra-high",
               width = 216,
               height = 301,
@@ -508,13 +507,13 @@ data:extend({
         layers = 
         { 
           {
-            filename = "__FactorioExtended-Power__/graphics/entity/boiler-mk2/boiler-S-idle.png",
+            filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk2/boiler-S-idle.png",
             priority = "extra-high",
             width = 128,
             height = 95,
             shift = util.by_pixel(3, 12.5),
             hr_version = {
-              filename = "__FactorioExtended-Power__/graphics/entity/boiler-mk2/hr-boiler-S-idle.png",
+              filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk2/hr-boiler-S-idle.png",
               priority = "extra-high",
               width = 260,
               height = 192,
@@ -546,13 +545,13 @@ data:extend({
         layers = 
         { 
           {
-            filename = "__FactorioExtended-Power__/graphics/entity/boiler-mk2/boiler-W-idle.png",
+            filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk2/boiler-W-idle.png",
             priority = "extra-high",
             width = 96,
             height = 132,
             shift = util.by_pixel(1, 5),
             hr_version = {
-              filename = "__FactorioExtended-Power__/graphics/entity/boiler-mk2/hr-boiler-W-idle.png",
+              filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk2/hr-boiler-W-idle.png",
               priority = "extra-high",
               width = 196,
               height = 273,
@@ -783,7 +782,7 @@ data:extend({
   {
     type = "boiler",
     name = "boiler-mk3",
-    icon = "__FactorioExtended-Power__/graphics/icons/boiler-mk3.png",
+    icon = "__FactorioExtended-Plus-Power__/graphics/icons/boiler-mk3.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "boiler-mk3"},
@@ -806,7 +805,7 @@ data:extend({
         percent = 50
       }
     },
-    fast_replaceable_group = "pipe",
+    fast_replaceable_group = "boiler",
     collision_box = {{-1.29, -0.79}, {1.29, 0.79}},
     selection_box = {{-1.5, -1}, {1.5, 1}},
     target_temperature = 165,
@@ -885,13 +884,13 @@ data:extend({
         layers = 
         { 
           {
-            filename = "__FactorioExtended-Power__/graphics/entity/boiler-mk3/boiler-N-idle.png",
+            filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk3/boiler-N-idle.png",
             priority = "extra-high",
             width = 131,
             height = 108,
             shift = util.by_pixel(-0.5, 4),
             hr_version = {
-              filename = "__FactorioExtended-Power__/graphics/entity/boiler-mk3/hr-boiler-N-idle.png",
+              filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk3/hr-boiler-N-idle.png",
               priority = "extra-high",
               width = 269,
               height = 221,
@@ -923,13 +922,13 @@ data:extend({
         layers = 
         { 
           {
-            filename = "__FactorioExtended-Power__/graphics/entity/boiler-mk3/boiler-E-idle.png",
+            filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk3/boiler-E-idle.png",
             priority = "extra-high",
             width = 105,
             height = 147,
             shift = util.by_pixel(-3.5, -0.5),
             hr_version = {
-              filename = "__FactorioExtended-Power__/graphics/entity/boiler-mk3/hr-boiler-E-idle.png",
+              filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk3/hr-boiler-E-idle.png",
               priority = "extra-high",
               width = 216,
               height = 301,
@@ -961,13 +960,13 @@ data:extend({
         layers = 
         { 
           {
-            filename = "__FactorioExtended-Power__/graphics/entity/boiler-mk3/boiler-S-idle.png",
+            filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk3/boiler-S-idle.png",
             priority = "extra-high",
             width = 128,
             height = 95,
             shift = util.by_pixel(3, 12.5),
             hr_version = {
-              filename = "__FactorioExtended-Power__/graphics/entity/boiler-mk3/hr-boiler-S-idle.png",
+              filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk3/hr-boiler-S-idle.png",
               priority = "extra-high",
               width = 260,
               height = 192,
@@ -999,13 +998,13 @@ data:extend({
         layers = 
         { 
           {
-            filename = "__FactorioExtended-Power__/graphics/entity/boiler-mk3/boiler-W-idle.png",
+            filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk3/boiler-W-idle.png",
             priority = "extra-high",
             width = 96,
             height = 132,
             shift = util.by_pixel(1, 5),
             hr_version = {
-              filename = "__FactorioExtended-Power__/graphics/entity/boiler-mk3/hr-boiler-W-idle.png",
+              filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk3/hr-boiler-W-idle.png",
               priority = "extra-high",
               width = 196,
               height = 273,

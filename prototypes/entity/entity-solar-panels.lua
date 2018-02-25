@@ -4,7 +4,7 @@ data:extend(
   {
     type = "solar-panel",
     name = "solar-panel-mk2",
-    icon = "__FactorioExtended-Power__/graphics/icons/solar-panel-mk2.png",
+    icon = "__FactorioExtended-Plus-Power__/graphics/icons/solar-panel-mk2.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "solar-panel-mk2"},
@@ -23,13 +23,13 @@ data:extend(
       layers =
       {
         {
-          filename = "__FactorioExtended-Power__/graphics/entity/solar-panels/solar-panel-mk2.png",
+          filename = "__FactorioExtended-Plus-Power__/graphics/entity/solar-panels/solar-panel-mk2.png",
           priority = "high",
           width = 116,
           height = 112,
           shift = util.by_pixel(-3, 3),
           hr_version = {
-            filename = "__FactorioExtended-Power__/graphics/entity/solar-panels/hr-solar-panel-mk2.png",
+            filename = "__FactorioExtended-Plus-Power__/graphics/entity/solar-panels/hr-solar-panel-mk2.png",
             priority = "high",
             width = 230,
             height = 224,
@@ -83,7 +83,7 @@ data:extend(
   {
     type = "solar-panel",
     name = "solar-panel-mk3",
-    icon = "__FactorioExtended-Power__/graphics/icons/solar-panel-mk3.png",
+    icon = "__FactorioExtended-Plus-Power__/graphics/icons/solar-panel-mk3.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "solar-panel-mk3"},
@@ -102,13 +102,13 @@ data:extend(
       layers =
       {
         {
-          filename = "__FactorioExtended-Power__/graphics/entity/solar-panels/solar-panel-mk3.png",
+          filename = "__FactorioExtended-Plus-Power__/graphics/entity/solar-panels/solar-panel-mk3.png",
           priority = "high",
           width = 116,
           height = 112,
           shift = util.by_pixel(-3, 3),
           hr_version = {
-            filename = "__FactorioExtended-Power__/graphics/entity/solar-panels/hr-solar-panel-mk3.png",
+            filename = "__FactorioExtended-Plus-Power__/graphics/entity/solar-panels/hr-solar-panel-mk3.png",
             priority = "high",
             width = 230,
             height = 224,

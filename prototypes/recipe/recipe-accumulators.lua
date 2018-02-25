@@ -8,7 +8,7 @@ data:extend(
     ingredients =
     {
       {"accumulator", 4},
-	  {"iron-plate", 25}
+      {"iron-plate", 25}
     },
     result = "accumulator-mk2"
   },
@@ -20,7 +20,7 @@ data:extend(
     ingredients =
     {
       {"accumulator-mk2", 4},
-	  {"steel-plate", 25}
+      {"steel-plate", 25}
     },
     result = "accumulator-mk3"
   }
