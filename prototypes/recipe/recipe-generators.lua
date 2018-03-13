@@ -21,8 +21,8 @@ data:extend(
     ingredients =
     {
       {"steam-engine-mk2", 2},
-      {"titanium-alloy", 50},
-      {"processing-unit", 50}
+      {"titanium-alloy", 25},
+      {"processing-unit", 5}
     },
     result = "steam-engine-mk3"
   },
@@ -46,9 +46,9 @@ data:extend(
     enabled = "false",
     ingredients =
     {
-      {"boiler-mk2", 1},
-      {"titanium-alloy", 50},
-      {"processing-unit", 50}
+      {"boiler-mk2", 2},
+      {"titanium-alloy", 25},
+      {"processing-unit", 5}
     },
     result = "boiler-mk3"
   }

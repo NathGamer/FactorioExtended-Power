@@ -117,7 +117,7 @@ data:extend({
   minable = {hardness = 0.2, mining_time = 0.5, result = "substation-mk3"},
   max_health = 600,
   corpse = "medium-remnants",
-    track_coverage_during_build_by_moving = true,
+  track_coverage_during_build_by_moving = true,
   resistances = 
   {
     {
