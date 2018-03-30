@@ -12,7 +12,7 @@ data:extend(
         recipe = "solar-panel-mk2"
       }
     },
-    prerequisites = {"solar-energy", "advanced-electronics"},
+    prerequisites = {"solar-energy", "advanced-electronics", "titanium-processing"},
     unit =
     {
       count = 350,
@@ -20,7 +20,8 @@ data:extend(
       {
         {"science-pack-1", 1},
         {"science-pack-2", 1},
-        {"science-pack-3", 1}
+        {"science-pack-3", 1},
+        {"production-science-pack", 1}
       },
       time = 30
     },
@@ -38,15 +39,16 @@ data:extend(
         recipe = "solar-panel-mk3"
       }
     },
-    prerequisites = {"solar-energy-2", "advanced-electronics-2", "titanium-processing"},
+    prerequisites = {"solar-energy-2", "advanced-electronics-2"},
     unit =
     {
-      count = 450,
+      count = 350,
       ingredients =
       {
         {"science-pack-1", 1},
         {"science-pack-2", 1},
         {"science-pack-3", 1},
+        {"production-science-pack", 1},
         {"high-tech-science-pack", 1}
       },
       time = 30
@@ -66,7 +68,7 @@ data:extend(
         recipe = "accumulator-mk2"
       }
     },
-    prerequisites = {"electric-energy-accumulators-1"},
+    prerequisites = {"electric-energy-accumulators-1", "titanium-processing"},
     unit =
     {
       count = 250,
@@ -101,7 +103,8 @@ data:extend(
       {
         {"science-pack-1", 1},
         {"science-pack-2", 1},
-        {"science-pack-3", 1}
+        {"science-pack-3", 1},
+        {"production-science-pack", 1}
       },
       time = 30
     },
@@ -112,7 +115,7 @@ data:extend(
     name = "electrical-engineer",
     icon = "__FactorioExtended-Plus-Power__/graphics/technology/electrical-engineer.png",
     icon_size = 128,
-    prerequisites = {"solar-energy", "electric-energy-accumulators-1", "electric-energy-distribution-2"},
+    prerequisites = {"solar-energy", "electric-energy-accumulators-1", "electric-energy-distribution-2", "titanium-processing"},
     effects =
     {
       {
@@ -154,7 +157,7 @@ data:extend(
     name = "electrical-engineer-2",
     icon = "__FactorioExtended-Plus-Power__/graphics/technology/electrical-engineer.png",
     icon_size = 128,
-    prerequisites = {"electrical-engineer", "titanium-processing"},
+    prerequisites = {"electrical-engineer"},
     effects =
     {
       {
@@ -180,12 +183,13 @@ data:extend(
     },
     unit =
     {
-      count = 350,
+      count = 400,
       ingredients =
       {
         {"science-pack-1", 1},
         {"science-pack-2", 1},
-        {"science-pack-3", 1}
+        {"science-pack-3", 1},
+        {"production-science-pack", 1}
       },
       time = 60
     },
