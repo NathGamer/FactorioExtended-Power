@@ -678,8 +678,7 @@ data:extend({
         {type = "input-output", position = {-2, 0.5}},
         {type = "input-output", position = {2, 0.5}}
       },
-      production_type = "input-output",
-      filter = "steam"
+      production_type = "input-output"
     },
     output_fluid_box =
     {
@@ -691,7 +690,8 @@ data:extend({
       {
         {type = "output", position = {0, -1.5}}
       },
-      production_type = "output"
+      production_type = "output",
+      filter = "steam"
     },
 	fluid_input =
     {
