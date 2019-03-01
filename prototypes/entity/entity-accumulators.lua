@@ -18,7 +18,7 @@ data:extend(
     {
       type = "electric",
       buffer_capacity = "20MJ",
-      usage_priority = "terciary",
+      usage_priority = "tertiary",
       input_flow_limit = "1200kW",
       output_flow_limit = "1200kW"
     },
@@ -158,7 +158,7 @@ data:extend(
     {
       type = "electric",
       buffer_capacity = "80MJ",
-      usage_priority = "terciary",
+      usage_priority = "tertiary",
       input_flow_limit = "4800kW",
       output_flow_limit = "4800kW"
     },
