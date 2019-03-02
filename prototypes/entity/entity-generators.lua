@@ -331,7 +331,7 @@ data:extend({
     icon = "__FactorioExtended-Plus-Power__/graphics/icons/boiler-mk2.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "boiler-mk2"},
+    minable = {mining_time = 0.5, result = "boiler-mk2"},
     max_health = 400,
     corpse = "small-remnants",
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
@@ -382,16 +382,6 @@ data:extend({
       production_type = "output",
       filter = "steam"
     },
-    fluid_input =
-    {
-      name = "water",
-      amount = 0.0
-    },
-    fluid_output =
-    {
-      name = "steam",
-      amount = 0.0
-    }, 
     energy_consumption = "3.6MW", 
     energy_source =
     {
@@ -436,7 +426,8 @@ data:extend({
             width = 131,
             height = 108,
             shift = util.by_pixel(-0.5, 4),
-            hr_version = {
+            hr_version = 
+            {
               filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk2/hr-boiler-N-idle.png",
               priority = "extra-high",
               width = 269,
@@ -452,7 +443,8 @@ data:extend({
             height = 82,
             shift = util.by_pixel(20.5, 9),
             draw_as_shadow = true,
-            hr_version = {
+            hr_version = 
+            {
               filename = "__base__/graphics/entity/boiler/hr-boiler-N-shadow.png",
               priority = "extra-high",
               width = 274,
@@ -474,7 +466,8 @@ data:extend({
             width = 105,
             height = 147,
             shift = util.by_pixel(-3.5, -0.5),
-            hr_version = {
+            hr_version = 
+            {
               filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk2/hr-boiler-E-idle.png",
               priority = "extra-high",
               width = 216,
@@ -490,7 +483,8 @@ data:extend({
             height = 97,
             shift = util.by_pixel(30, 9.5),
             draw_as_shadow = true,
-            hr_version = {
+            hr_version = 
+            {
               filename = "__base__/graphics/entity/boiler/hr-boiler-E-shadow.png",
               priority = "extra-high",
               width = 184,
@@ -512,7 +506,8 @@ data:extend({
             width = 128,
             height = 95,
             shift = util.by_pixel(3, 12.5),
-            hr_version = {
+            hr_version = 
+            {
               filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk2/hr-boiler-S-idle.png",
               priority = "extra-high",
               width = 260,
@@ -528,7 +523,8 @@ data:extend({
             height = 66,
             shift = util.by_pixel(30, 16),
             draw_as_shadow = true,
-            hr_version = {
+            hr_version = 
+            {
               filename = "__base__/graphics/entity/boiler/hr-boiler-S-shadow.png",
               priority = "extra-high",
               width = 311,
@@ -550,7 +546,8 @@ data:extend({
             width = 96,
             height = 132,
             shift = util.by_pixel(1, 5),
-            hr_version = {
+            hr_version = 
+            {
               filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk2/hr-boiler-W-idle.png",
               priority = "extra-high",
               width = 196,
@@ -566,7 +563,8 @@ data:extend({
             height = 109,
             shift = util.by_pixel(19.5, 6.5),
             draw_as_shadow = true,
-            hr_version = {
+            hr_version = 
+            {
               filename = "__base__/graphics/entity/boiler/hr-boiler-W-shadow.png",
               priority = "extra-high",
               width = 206,
@@ -589,7 +587,8 @@ data:extend({
         width = 3,
         height = 17,
         shift = util.by_pixel(33.5, -13.5),
-        hr_version = {
+        hr_version = 
+        {
           filename = "__base__/graphics/entity/boiler/hr-boiler-E-patch.png",
           width = 6,
           height = 36,
@@ -612,7 +611,8 @@ data:extend({
         height = 13,
         animation_speed = 0.5,
         shift = util.by_pixel(0, -8.5),
-        hr_version = {
+        hr_version = 
+        {
           filename = "__base__/graphics/entity/boiler/hr-boiler-N-fire.png",
           priority = "extra-high",
           frame_count = 64,
@@ -634,7 +634,8 @@ data:extend({
         height = 14,
         animation_speed = 0.5,
         shift = util.by_pixel(-10, -22),
-        hr_version = {
+        hr_version = 
+        {
           filename = "__base__/graphics/entity/boiler/hr-boiler-E-fire.png",
           priority = "extra-high",
           frame_count = 64,
@@ -656,7 +657,8 @@ data:extend({
         height = 9,
         animation_speed = 0.5,
         shift = util.by_pixel(-1, -26.5),
-        hr_version = {
+        hr_version = 
+        {
           filename = "__base__/graphics/entity/boiler/hr-boiler-S-fire.png",
           priority = "extra-high",
           frame_count = 64,
@@ -678,7 +680,8 @@ data:extend({
         height = 14,
         animation_speed = 0.5,
         shift = util.by_pixel(13, -23),
-        hr_version = {
+        hr_version = 
+        {
           filename = "__base__/graphics/entity/boiler/hr-boiler-W-fire.png",
           priority = "extra-high",
           frame_count = 64,
@@ -705,7 +708,8 @@ data:extend({
         height = 87,
         shift = util.by_pixel(-1, -6.5),
         blend_mode = "additive",
-        hr_version = {
+        hr_version = 
+        {
           filename = "__base__/graphics/entity/boiler/hr-boiler-N-light.png",
           priority = "extra-high",
           frame_count = 1,
@@ -725,7 +729,8 @@ data:extend({
         height = 122,
         shift = util.by_pixel(0, -13),
         blend_mode = "additive",
-        hr_version = {
+        hr_version = 
+        {
           filename = "__base__/graphics/entity/boiler/hr-boiler-E-light.png",
           priority = "extra-high",
           frame_count = 1,
@@ -745,7 +750,8 @@ data:extend({
         height = 81,
         shift = util.by_pixel(1, 5.5),
         blend_mode = "additive",
-        hr_version = {
+        hr_version = 
+        {
           filename = "__base__/graphics/entity/boiler/hr-boiler-S-light.png",
           priority = "extra-high",
           frame_count = 1,
@@ -765,7 +771,8 @@ data:extend({
         height = 109,
         shift = util.by_pixel(2, -6.5),
         blend_mode = "additive",
-        hr_version = {
+        hr_version = 
+        {
           filename = "__base__/graphics/entity/boiler/hr-boiler-W-light.png",
           priority = "extra-high",
           frame_count = 1,
@@ -785,7 +792,7 @@ data:extend({
     icon = "__FactorioExtended-Plus-Power__/graphics/icons/boiler-mk3.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "boiler-mk3"},
+    minable = {mining_time = 0.5, result = "boiler-mk3"},
     max_health = 600,
     corpse = "small-remnants",
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
@@ -836,16 +843,6 @@ data:extend({
       production_type = "output",
       filter = "steam"
     },
-    fluid_input =
-    {
-      name = "water",
-      amount = 0.0
-    },
-    fluid_output =
-    {
-      name = "steam",
-      amount = 0.0
-    }, 
     energy_consumption = "7.2MW",
     energy_source =
     {
@@ -889,7 +886,8 @@ data:extend({
             width = 131,
             height = 108,
             shift = util.by_pixel(-0.5, 4),
-            hr_version = {
+            hr_version = 
+            {
               filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk3/hr-boiler-N-idle.png",
               priority = "extra-high",
               width = 269,
@@ -905,7 +903,8 @@ data:extend({
             height = 82,
             shift = util.by_pixel(20.5, 9),
             draw_as_shadow = true,
-            hr_version = {
+            hr_version = 
+            {
               filename = "__base__/graphics/entity/boiler/hr-boiler-N-shadow.png",
               priority = "extra-high",
               width = 274,
@@ -927,7 +926,8 @@ data:extend({
             width = 105,
             height = 147,
             shift = util.by_pixel(-3.5, -0.5),
-            hr_version = {
+            hr_version = 
+            {
               filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk3/hr-boiler-E-idle.png",
               priority = "extra-high",
               width = 216,
@@ -943,7 +943,8 @@ data:extend({
             height = 97,
             shift = util.by_pixel(30, 9.5),
             draw_as_shadow = true,
-            hr_version = {
+            hr_version = 
+            {
               filename = "__base__/graphics/entity/boiler/hr-boiler-E-shadow.png",
               priority = "extra-high",
               width = 184,
@@ -965,7 +966,8 @@ data:extend({
             width = 128,
             height = 95,
             shift = util.by_pixel(3, 12.5),
-            hr_version = {
+            hr_version = 
+            {
               filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk3/hr-boiler-S-idle.png",
               priority = "extra-high",
               width = 260,
@@ -981,7 +983,8 @@ data:extend({
             height = 66,
             shift = util.by_pixel(30, 16),
             draw_as_shadow = true,
-            hr_version = {
+            hr_version = 
+            {
               filename = "__base__/graphics/entity/boiler/hr-boiler-S-shadow.png",
               priority = "extra-high",
               width = 311,
@@ -1003,7 +1006,8 @@ data:extend({
             width = 96,
             height = 132,
             shift = util.by_pixel(1, 5),
-            hr_version = {
+            hr_version = 
+            {
               filename = "__FactorioExtended-Plus-Power__/graphics/entity/boiler-mk3/hr-boiler-W-idle.png",
               priority = "extra-high",
               width = 196,
@@ -1019,7 +1023,8 @@ data:extend({
             height = 109,
             shift = util.by_pixel(19.5, 6.5),
             draw_as_shadow = true,
-            hr_version = {
+            hr_version = 
+            {
               filename = "__base__/graphics/entity/boiler/hr-boiler-W-shadow.png",
               priority = "extra-high",
               width = 206,
@@ -1042,7 +1047,8 @@ data:extend({
         width = 3,
         height = 17,
         shift = util.by_pixel(33.5, -13.5),
-        hr_version = {
+        hr_version = 
+        {
           filename = "__base__/graphics/entity/boiler/hr-boiler-E-patch.png",
           width = 6,
           height = 36,
@@ -1065,7 +1071,8 @@ data:extend({
         height = 13,
         animation_speed = 0.5,
         shift = util.by_pixel(0, -8.5),
-        hr_version = {
+        hr_version = 
+        {
           filename = "__base__/graphics/entity/boiler/hr-boiler-N-fire.png",
           priority = "extra-high",
           frame_count = 64,
@@ -1087,7 +1094,8 @@ data:extend({
         height = 14,
         animation_speed = 0.5,
         shift = util.by_pixel(-10, -22),
-        hr_version = {
+        hr_version = 
+        {
           filename = "__base__/graphics/entity/boiler/hr-boiler-E-fire.png",
           priority = "extra-high",
           frame_count = 64,
@@ -1109,7 +1117,8 @@ data:extend({
         height = 9,
         animation_speed = 0.5,
         shift = util.by_pixel(-1, -26.5),
-        hr_version = {
+        hr_version = 
+        {
           filename = "__base__/graphics/entity/boiler/hr-boiler-S-fire.png",
           priority = "extra-high",
           frame_count = 64,
@@ -1131,7 +1140,8 @@ data:extend({
         height = 14,
         animation_speed = 0.5,
         shift = util.by_pixel(13, -23),
-        hr_version = {
+        hr_version = 
+        {
           filename = "__base__/graphics/entity/boiler/hr-boiler-W-fire.png",
           priority = "extra-high",
           frame_count = 64,
@@ -1158,7 +1168,8 @@ data:extend({
         height = 87,
         shift = util.by_pixel(-1, -6.5),
         blend_mode = "additive",
-        hr_version = {
+        hr_version = 
+        {
           filename = "__base__/graphics/entity/boiler/hr-boiler-N-light.png",
           priority = "extra-high",
           frame_count = 1,
@@ -1178,7 +1189,8 @@ data:extend({
         height = 122,
         shift = util.by_pixel(0, -13),
         blend_mode = "additive",
-        hr_version = {
+        hr_version = 
+        {
           filename = "__base__/graphics/entity/boiler/hr-boiler-E-light.png",
           priority = "extra-high",
           frame_count = 1,
@@ -1198,7 +1210,8 @@ data:extend({
         height = 81,
         shift = util.by_pixel(1, 5.5),
         blend_mode = "additive",
-        hr_version = {
+        hr_version = 
+        {
           filename = "__base__/graphics/entity/boiler/hr-boiler-S-light.png",
           priority = "extra-high",
           frame_count = 1,
@@ -1218,7 +1231,8 @@ data:extend({
         height = 109,
         shift = util.by_pixel(2, -6.5),
         blend_mode = "additive",
-        hr_version = {
+        hr_version = 
+        {
           filename = "__base__/graphics/entity/boiler/hr-boiler-W-light.png",
           priority = "extra-high",
           frame_count = 1,
