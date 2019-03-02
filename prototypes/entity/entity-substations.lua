@@ -5,7 +5,7 @@ data:extend({
   icon = "__FactorioExtended-Plus-Power__/graphics/icons/substation-mk2.png",
   icon_size = 32,
   flags = {"placeable-neutral", "player-creation"},
-  minable = {hardness = 0.2, mining_time = 0.5, result = "substation-mk2"},
+  minable = {mining_time = 0.3, result = "substation-mk2"},
   max_health = 400,
   corpse = "medium-remnants",
   track_coverage_during_build_by_moving = true,
@@ -18,91 +18,151 @@ data:extend({
   },
   collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
   selection_box = {{-1, -1}, {1, 1}},
-  drawing_box = {{-1, -1.5}, {1, 1}},
+  drawing_box = {{-1, -3}, {1, 1}},
   maximum_wire_distance = 28,
   supply_area_distance = 14,
   pictures =
-  {
-    filename = "__FactorioExtended-Plus-Power__/graphics/entity/substations/substation-mk2.png",
-    priority = "high",
-    width = 132,
-    height = 144,
-    axially_symmetrical = false,
-    direction_count = 4,
-    shift = {0.9, -1}
-  },
-  vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
-  working_sound =
-  {
-    sound = { filename = "__base__/sound/substation.ogg" },
-    apparent_volume = 1.5,
-    audible_distance_modifier = 0.5,
-    probability = 1 / (3 * 60) -- average pause between the sound is 3 seconds
-  },
-  connection_points =
-  {
     {
-      shadow =
+      layers =
       {
-        copper = {1.9, -0.6},
-        green = {1.3, -0.6},
-        red = {2.65, -0.6}
-      },
-      wire =
-      {
-        copper = {-0.23, -2.65},
-        green = {-0.85,-2.65},
-        red = {0.35,-2.65}
+
+        {
+          filename = "__FactorioExtended-Plus-Power__/graphics/entity/substation-mk2/substation-mk2.png",
+          priority = "high",
+          width = 70,
+          height = 136,
+          direction_count = 4,
+          shift = util.by_pixel(0, 1-32),
+          hr_version =
+          {
+            filename = "__FactorioExtended-Plus-Power__/graphics/entity/substation-mk2/hr-substation-mk2.png",
+            priority = "high",
+            width = 138,
+            height = 270,
+            direction_count = 4,
+            shift = util.by_pixel(0, 1-32),
+            scale = 0.5
+          }
+        },
+        {
+          filename = "__base__/graphics/entity/substation/substation-shadow.png",
+          priority = "high",
+          width = 186,
+          height = 52,
+          direction_count = 4,
+          shift = util.by_pixel(62, 42-32),
+          draw_as_shadow = true,
+          hr_version =
+          {
+            filename = "__base__/graphics/entity/substation/hr-substation-shadow.png",
+            priority = "high",
+            width = 370,
+            height = 104,
+            direction_count = 4,
+            shift = util.by_pixel(62, 42-32),
+            draw_as_shadow = true,
+            scale = 0.5
+          }
+        }
       }
     },
+
+    --active_picture =
+    --{
+    --  filename = "__base__/graphics/entity/substation/substation-light.png",
+    --  priority = "high",
+    --  width = 46,
+    --  height = 78,
+    --  --direction_count = 4,
+    --  shift = util.by_pixel(0, 16-32),
+    --  blend_mode = "additive",
+    --  hr_version =
+    --  {
+    --    filename = "__base__/graphics/entity/substation/hr-substation-light.png",
+    --    priority = "high",
+    --    width = 92,
+    --    height = 156,
+    --    --direction_count = 4,
+    --    shift = util.by_pixel(0.5, 16.5-32),
+    --    blend_mode = "additive",
+    --    scale = 0.5
+    --  }
+    --},
+    --light = {intensity = 0.75, size = 3, color = {r = 1.0, g = 1.0, b = 1.0}},
+
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound =
     {
-      shadow =
+      sound = { filename = "__base__/sound/substation.ogg" },
+      apparent_volume = 1.5,
+      audible_distance_modifier = 0.5,
+      probability = 1 / (3 * 60) -- average pause between the sound is 3 seconds
+    },
+    connection_points =
+    {
       {
-        copper = {1.9, -0.6},
-        green = {1.2, -0.8},
-        red = {2.5, -0.35}
+        shadow =
+        {
+          copper = util.by_pixel(136, 8),
+          green = util.by_pixel(124, 8),
+          red = util.by_pixel(151, 9)
+        },
+        wire =
+        {
+          copper = util.by_pixel(0, -86),
+          green = util.by_pixel(-21, -82),
+          red = util.by_pixel(22, -81)
+        }
       },
-      wire =
       {
-        copper = {-0.26, -2.71},
-        green = {-0.67,-3},
-        red = {0.17,-2.47}
+        shadow =
+        {
+          copper = util.by_pixel(133, 9),
+          green = util.by_pixel(144, 21),
+          red = util.by_pixel(110, -3)
+        },
+        wire =
+        {
+          copper = util.by_pixel(0, -85),
+          green = util.by_pixel(15, -70),
+          red = util.by_pixel(-15, -92)
+        }
+      },
+      {
+        shadow =
+        {
+          copper = util.by_pixel(133, 9),
+          green = util.by_pixel(127, 26),
+          red = util.by_pixel(127, -8)
+        },
+        wire =
+        {
+          copper = util.by_pixel(0, -85),
+          green = util.by_pixel(0, -66),
+          red = util.by_pixel(0, -97)
+        }
+      },
+      {
+        shadow =
+        {
+          copper = util.by_pixel(133, 9),
+          green = util.by_pixel(111, 20),
+          red = util.by_pixel(144, -3)
+        },
+        wire =
+        {
+          copper = util.by_pixel(0, -86),
+          green = util.by_pixel(-15, -71),
+          red = util.by_pixel(15, -92)
+        }
       }
     },
-    {
-      shadow =
-      {
-        copper = {1.9, -0.6},
-        green = {1.9, -0.9},
-        red = {1.9, -0.3}
-      },
-      wire =
-      {
-        copper = {-0.23, -2.7},
-        green = {-0.23,-3.2},
-        red = {-0.23,-2.35}
-      }
-    },
-    {
-      shadow =
-      {
-        copper = {1.8, -0.7},
-        green = {1.3, -0.6},
-        red = {2.4, -1.15}
-      },
-      wire =
-      {
-        copper = {-0.2, -2.7},
-        green = {-0.62,-2.45},
-        red = {0.25,-2.98}
-      }
-    }
-  },
   radius_visualisation_picture =
   {
     filename = "__base__/graphics/entity/small-electric-pole/electric-pole-radius-visualization.png",
     width = 12,
-    height = 12
+    height = 12,
+    priority = "extra-high-no-scale"
   },
   fast_replaceable_group = "electric-pole-2x2"  
 },
@@ -114,7 +174,7 @@ data:extend({
   icon = "__FactorioExtended-Plus-Power__/graphics/icons/substation-mk3.png",
   icon_size = 32,
   flags = {"placeable-neutral", "player-creation"},
-  minable = {hardness = 0.2, mining_time = 0.5, result = "substation-mk3"},
+  minable = {mining_time = 0.4, result = "substation-mk3"},
   max_health = 600,
   corpse = "medium-remnants",
   track_coverage_during_build_by_moving = true,
@@ -127,119 +187,151 @@ data:extend({
   },
   collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
   selection_box = {{-1, -1}, {1, 1}},
-  drawing_box = {{-1, -1.5}, {1, 1}},
+  drawing_box = {{-1, -3}, {1, 1}},
   maximum_wire_distance = 42,
   supply_area_distance = 21,
   pictures =
-  {
-    filename = "__FactorioExtended-Plus-Power__/graphics/entity/substations/substation-mk3.png",
-    priority = "high",
-    width = 132,
-    height = 144,
-    axially_symmetrical = false,
-    direction_count = 4,
-    shift = {0.9, -1}
-  },
+    {
+      layers =
+      {
+
+        {
+          filename = "__FactorioExtended-Plus-Power__/graphics/entity/substation-mk3/substation-mk3.png",
+          priority = "high",
+          width = 70,
+          height = 136,
+          direction_count = 4,
+          shift = util.by_pixel(0, 1-32),
+          hr_version =
+          {
+            filename = "__FactorioExtended-Plus-Power__/graphics/entity/substation-mk3/hr-substation-mk3.png",
+            priority = "high",
+            width = 138,
+            height = 270,
+            direction_count = 4,
+            shift = util.by_pixel(0, 1-32),
+            scale = 0.5
+          }
+        },
+        {
+          filename = "__base__/graphics/entity/substation/substation-shadow.png",
+          priority = "high",
+          width = 186,
+          height = 52,
+          direction_count = 4,
+          shift = util.by_pixel(62, 42-32),
+          draw_as_shadow = true,
+          hr_version =
+          {
+            filename = "__base__/graphics/entity/substation/hr-substation-shadow.png",
+            priority = "high",
+            width = 370,
+            height = 104,
+            direction_count = 4,
+            shift = util.by_pixel(62, 42-32),
+            draw_as_shadow = true,
+            scale = 0.5
+          }
+        }
+      }
+    },
+
+    --active_picture =
+    --{
+    --  filename = "__base__/graphics/entity/substation/substation-light.png",
+    --  priority = "high",
+    --  width = 46,
+    --  height = 78,
+    --  --direction_count = 4,
+    --  shift = util.by_pixel(0, 16-32),
+    --  blend_mode = "additive",
+    --  hr_version =
+    --  {
+    --    filename = "__base__/graphics/entity/substation/hr-substation-light.png",
+    --    priority = "high",
+    --    width = 92,
+    --    height = 156,
+    --    --direction_count = 4,
+    --    shift = util.by_pixel(0.5, 16.5-32),
+    --    blend_mode = "additive",
+    --    scale = 0.5
+    --  }
+    --},
+    --light = {intensity = 0.75, size = 3, color = {r = 1.0, g = 1.0, b = 1.0}},
+
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
-  working_sound =
+    working_sound =
     {
       sound = { filename = "__base__/sound/substation.ogg" },
       apparent_volume = 1.5,
       audible_distance_modifier = 0.5,
       probability = 1 / (3 * 60) -- average pause between the sound is 3 seconds
     },
-  connection_points =
-  {
+    connection_points =
     {
-      shadow =
       {
-        copper = {1.9, -0.6},
-        green = {1.3, -0.6},
-        red = {2.65, -0.6}
+        shadow =
+        {
+          copper = util.by_pixel(136, 8),
+          green = util.by_pixel(124, 8),
+          red = util.by_pixel(151, 9)
+        },
+        wire =
+        {
+          copper = util.by_pixel(0, -86),
+          green = util.by_pixel(-21, -82),
+          red = util.by_pixel(22, -81)
+        }
       },
-      wire =
       {
-        copper = {-0.23, -2.65},
-        green = {-0.85,-2.65},
-        red = {0.35,-2.65}
+        shadow =
+        {
+          copper = util.by_pixel(133, 9),
+          green = util.by_pixel(144, 21),
+          red = util.by_pixel(110, -3)
+        },
+        wire =
+        {
+          copper = util.by_pixel(0, -85),
+          green = util.by_pixel(15, -70),
+          red = util.by_pixel(-15, -92)
+        }
+      },
+      {
+        shadow =
+        {
+          copper = util.by_pixel(133, 9),
+          green = util.by_pixel(127, 26),
+          red = util.by_pixel(127, -8)
+        },
+        wire =
+        {
+          copper = util.by_pixel(0, -85),
+          green = util.by_pixel(0, -66),
+          red = util.by_pixel(0, -97)
+        }
+      },
+      {
+        shadow =
+        {
+          copper = util.by_pixel(133, 9),
+          green = util.by_pixel(111, 20),
+          red = util.by_pixel(144, -3)
+        },
+        wire =
+        {
+          copper = util.by_pixel(0, -86),
+          green = util.by_pixel(-15, -71),
+          red = util.by_pixel(15, -92)
+        }
       }
     },
-    {
-      shadow =
-      {
-        copper = {1.9, -0.6},
-        green = {1.2, -0.8},
-        red = {2.5, -0.35}
-      },
-      wire =
-      {
-        copper = {-0.26, -2.71},
-        green = {-0.67,-3},
-        red = {0.17,-2.47}
-      }
-    },
-    {
-      shadow =
-      {
-        copper = {1.9, -0.6},
-        green = {1.9, -0.9},
-        red = {1.9, -0.3}
-      },
-      wire =
-      {
-        copper = {-0.23, -2.7},
-        green = {-0.23,-3.2},
-        red = {-0.23,-2.35}
-      }
-    },
-    {
-      shadow =
-      {
-        copper = {1.8, -0.7},
-        green = {1.3, -0.6},
-        red = {2.4, -1.15}
-      },
-      wire =
-      {
-        copper = {-0.2, -2.7},
-        green = {-0.62,-2.45},
-        red = {0.25,-2.98}
-      }
-    }
-  },
-  copper_wire_picture =
-  {
-    filename = "__base__/graphics/entity/small-electric-pole/copper-wire.png",
-    priority = "extra-high-no-scale",
-    width = 224,
-    height = 46
-  },
-  green_wire_picture =
-  {
-    filename = "__base__/graphics/entity/small-electric-pole/green-wire.png",
-    priority = "extra-high-no-scale",
-    width = 224,
-    height = 46
-  },
   radius_visualisation_picture =
   {
     filename = "__base__/graphics/entity/small-electric-pole/electric-pole-radius-visualization.png",
     width = 12,
-    height = 12
-  },
-  red_wire_picture =
-  {
-    filename = "__base__/graphics/entity/small-electric-pole/red-wire.png",
-    priority = "extra-high-no-scale",
-    width = 224,
-    height = 46
-  },
-  wire_shadow_picture =
-  {
-    filename = "__base__/graphics/entity/small-electric-pole/wire-shadow.png",
-    priority = "extra-high-no-scale",
-    width = 224,
-    height = 46
+    height = 12,
+    priority = "extra-high-no-scale"
   },
   fast_replaceable_group = "electric-pole-2x2"  
 }
