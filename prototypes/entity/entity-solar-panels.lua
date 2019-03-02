@@ -23,13 +23,14 @@ data:extend(
       layers =
       {
         {
-          filename = "__FactorioExtended-Plus-Power__/graphics/entity/solar-panels/solar-panel-mk2.png",
+          filename = "__FactorioExtended-Plus-Power__/graphics/entity/solar-panel-mk2/solar-panel-mk2.png",
           priority = "high",
           width = 116,
           height = 112,
           shift = util.by_pixel(-3, 3),
-          hr_version = {
-            filename = "__FactorioExtended-Plus-Power__/graphics/entity/solar-panels/hr-solar-panel-mk2.png",
+          hr_version = 
+          {
+            filename = "__FactorioExtended-Plus-Power__/graphics/entity/solar-panel-mk2/hr-solar-panel-mk2.png",
             priority = "high",
             width = 230,
             height = 224,
@@ -44,7 +45,8 @@ data:extend(
           height = 90,
           shift = util.by_pixel(10, 6),
           draw_as_shadow = true,
-          hr_version = {
+          hr_version = 
+          {
             filename = "__base__/graphics/entity/solar-panel/hr-solar-panel-shadow.png",
             priority = "high",
             width = 220,
@@ -66,7 +68,8 @@ data:extend(
           width = 108,
           height = 90,
           shift = util.by_pixel(11, 6),
-          hr_version = {
+          hr_version = 
+          {
             filename = "__base__/graphics/entity/solar-panel/hr-solar-panel-shadow-overlay.png",
             priority = "high",
             width = 214,
@@ -102,13 +105,14 @@ data:extend(
       layers =
       {
         {
-          filename = "__FactorioExtended-Plus-Power__/graphics/entity/solar-panels/solar-panel-mk3.png",
+          filename = "__FactorioExtended-Plus-Power__/graphics/entity/solar-panel-mk3/solar-panel-mk3.png",
           priority = "high",
           width = 116,
           height = 112,
           shift = util.by_pixel(-3, 3),
-          hr_version = {
-            filename = "__FactorioExtended-Plus-Power__/graphics/entity/solar-panels/hr-solar-panel-mk3.png",
+          hr_version = 
+          {
+            filename = "__FactorioExtended-Plus-Power__/graphics/entity/solar-panel-mk3/hr-solar-panel-mk3.png",
             priority = "high",
             width = 230,
             height = 224,
@@ -123,7 +127,8 @@ data:extend(
           height = 90,
           shift = util.by_pixel(10, 6),
           draw_as_shadow = true,
-          hr_version = {
+          hr_version = 
+          {
             filename = "__base__/graphics/entity/solar-panel/hr-solar-panel-shadow.png",
             priority = "high",
             width = 220,
@@ -145,7 +150,8 @@ data:extend(
           width = 108,
           height = 90,
           shift = util.by_pixel(11, 6),
-          hr_version = {
+          hr_version = 
+          {
             filename = "__base__/graphics/entity/solar-panel/hr-solar-panel-shadow-overlay.png",
             priority = "high",
             width = 214,
