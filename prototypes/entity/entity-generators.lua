@@ -7,10 +7,11 @@ data:extend({
     icon = "__FactorioExtended-Plus-Power__/graphics/icons/steam-engine-mk2.png",
     icon_size = 32,
     flags = {"placeable-neutral","player-creation"},
-    minable = {mining_time = 1, result = "steam-engine-mk2"},
+    minable = {mining_time = 0.4, result = "steam-engine-mk2"},
     max_health = 600,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
+    alert_icon_shift = util.by_pixel(3, -34),
     effectivity = 1.5,
     fluid_usage_per_tick = 0.75,
     maximum_temperature = 165,
@@ -43,12 +44,6 @@ data:extend({
       filter = "steam",
       minimum_temperature = 100.0
     },
-    fluid_input =
-    {
-      name = "steam",
-      amount = 0.0,
-      minimum_temperature = 100.0
-    },
     energy_source =
     {
       type = "electric",
@@ -65,7 +60,8 @@ data:extend({
           frame_count = 32,
           line_length = 8,
           shift = util.by_pixel(1, -5),
-          hr_version = {
+          hr_version = 
+          {
             filename = "__FactorioExtended-Plus-Power__/graphics/entity/steam-engine-mk2/hr-steam-engine-H.png",
             width = 352,
             height = 257,
@@ -83,7 +79,8 @@ data:extend({
           line_length = 8,
           draw_as_shadow = true,
           shift = util.by_pixel(48, 24),
-          hr_version = {
+          hr_version = 
+          {
             filename = "__base__/graphics/entity/steam-engine/hr-steam-engine-H-shadow.png",
             width = 508,
             height = 160,
@@ -107,7 +104,8 @@ data:extend({
           frame_count = 32,
           line_length = 8,
           shift = util.by_pixel(5, -6.5),
-          hr_version = {
+          hr_version = 
+          {
             filename = "__FactorioExtended-Plus-Power__/graphics/entity/steam-engine-mk2/hr-steam-engine-V.png",
             width = 225,
             height = 391,
@@ -125,7 +123,8 @@ data:extend({
           line_length = 8,
           draw_as_shadow = true,
           shift = util.by_pixel(40.5, 9.5),
-          hr_version = {
+          hr_version = 
+          {
             filename = "__base__/graphics/entity/steam-engine/hr-steam-engine-V-shadow.png",
             width = 330,
             height = 307,
@@ -169,11 +168,12 @@ data:extend({
     icon = "__FactorioExtended-Plus-Power__/graphics/icons/steam-engine-mk3.png",
     icon_size = 32,
     flags = {"placeable-neutral","player-creation"},
-    minable = {mining_time = 1, result = "steam-engine-mk3"},
+    minable = {mining_time = 0.5, result = "steam-engine-mk3"},
     max_health = 1200,
     fast_replaceable_group = "steam-engine",
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
+    alert_icon_shift = util.by_pixel(3, -34),
     effectivity = 2,
     fluid_usage_per_tick = 1,
     maximum_temperature = 165,
@@ -205,12 +205,6 @@ data:extend({
       filter = "steam",
       minimum_temperature = 100.0
     },
-    fluid_input =
-    {
-      name = "steam",
-      amount = 0.0,
-      minimum_temperature = 100.0
-    },
     energy_source =
     {
       type = "electric",
@@ -227,7 +221,8 @@ data:extend({
           frame_count = 32,
           line_length = 8,
           shift = util.by_pixel(1, -5),
-          hr_version = {
+          hr_version = 
+          {
             filename = "__FactorioExtended-Plus-Power__/graphics/entity/steam-engine-mk3/hr-steam-engine-H.png",
             width = 352,
             height = 257,
@@ -245,7 +240,8 @@ data:extend({
           line_length = 8,
           draw_as_shadow = true,
           shift = util.by_pixel(48, 24),
-          hr_version = {
+          hr_version = 
+          {
             filename = "__base__/graphics/entity/steam-engine/hr-steam-engine-H-shadow.png",
             width = 508,
             height = 160,
@@ -269,7 +265,8 @@ data:extend({
           frame_count = 32,
           line_length = 8,
           shift = util.by_pixel(5, -6.5),
-          hr_version = {
+          hr_version = 
+          {
             filename = "__FactorioExtended-Plus-Power__/graphics/entity/steam-engine-mk3/hr-steam-engine-V.png",
             width = 225,
             height = 391,
@@ -287,7 +284,8 @@ data:extend({
           line_length = 8,
           draw_as_shadow = true,
           shift = util.by_pixel(40.5, 9.5),
-          hr_version = {
+          hr_version = 
+          {
             filename = "__base__/graphics/entity/steam-engine/hr-steam-engine-V-shadow.png",
             width = 330,
             height = 307,
