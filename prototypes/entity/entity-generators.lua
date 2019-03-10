@@ -385,7 +385,7 @@ data:extend({
     {
       type = "burner",
       fuel_category = "chemical",
-      effectivity = 0.75, 
+      effectivity = 1, 
       fuel_inventory_size = 1, 
       emissions = 0.1 / 9.5,
       smoke =
@@ -846,7 +846,7 @@ data:extend({
     {
       type = "burner",
       fuel_category = "chemical",
-      effectivity = 0.99,
+      effectivity = 1,
       fuel_inventory_size = 1,
       emissions = 0.1 / 10.5,
       smoke =
