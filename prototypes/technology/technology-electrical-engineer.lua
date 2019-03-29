@@ -68,7 +68,7 @@ data:extend(
         recipe = "accumulator-mk2"
       }
     },
-    prerequisites = {"electric-energy-accumulators-1", "titanium-processing"},
+    prerequisites = {"electric-energy-accumulators", "titanium-processing"},
     unit =
     {
       count = 250,
@@ -115,7 +115,7 @@ data:extend(
     name = "electrical-engineer",
     icon = "__FactorioExtended-Plus-Power__/graphics/technology/electrical-engineer.png",
     icon_size = 128,
-    prerequisites = {"solar-energy", "electric-energy-accumulators-1", "electric-energy-distribution-2", "titanium-processing"},
+    prerequisites = {"solar-energy", "electric-energy-accumulators", "electric-energy-distribution-2", "titanium-processing"},
     effects =
     {
       {

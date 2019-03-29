@@ -25,3 +25,8 @@ Version: 0.2.2
 Date: 03. 10. 2019
   Changes :
     - Changing effectivity to 1 to match base game
+---------------------------------------------------------------------------------------------------
+Version: 0.2.3
+Date: 03. 29. 2019
+  Changes :
+    - Renamed "electric-energy-accumulators-1" to "electric-energy-accumulators" because factorio 0.17.23 changed this
