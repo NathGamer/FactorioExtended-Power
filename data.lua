@@ -18,8 +18,7 @@ require("prototypes.entity.entity-generators")
 
 require("prototypes.technology.technology-electrical-engineer")
 
-data.raw["solar-panel"]["solar-panel"].fast_replaceable_group = "solar-panel"
-data.raw["solar-panel"]["solar-panel"].collision_box = {{-1.2, -1.2}, {1.2, 1.2}}
+
 data.raw["electric-pole"]["big-electric-pole"].fast_replaceable_group = "big-electric-pole"
 data.raw["generator"]["steam-engine"].fast_replaceable_group = "steam-engine"
 data.raw["boiler"]["boiler"].fast_replaceable_group = "boiler"

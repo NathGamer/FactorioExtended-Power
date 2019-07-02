@@ -30,3 +30,8 @@ Version: 0.2.3
 Date: 03. 29. 2019
   Changes :
     - Renamed "electric-energy-accumulators-1" to "electric-energy-accumulators" because factorio 0.17.23 changed this
+---------------------------------------------------------------------------------------------------
+Version: 0.2.4
+Date: 07. 01. 2019
+  Changes :
+    - Added check for bobpower and not update vanilla solar panel collision if installed, this mainly because of 0.17.53 update

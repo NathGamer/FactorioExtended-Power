@@ -1,4 +1,11 @@
 
+data.raw["solar-panel"]["solar-panel"].fast_replaceable_group = "solar-panel"
+
+-- Don't Match vanilla collision if bobpower is installed
+if not mods["bobpower"] then  
+  data.raw["solar-panel"]["solar-panel"].collision_box = {{-1.2, -1.2}, {1.2, 1.2}}
+end
+
 data:extend(
 {
   {
