@@ -35,3 +35,9 @@ Version: 0.2.4
 Date: 07. 01. 2019
   Changes :
     - Added check for bobpower and not update vanilla solar panel collision if installed, this mainly because of 0.17.53 update
+---------------------------------------------------------------------------------------------------
+Version: 0.2.5
+Date: 09. 07. 2019
+  Changes :
+    - Removing loop for setting accumulators collision box and fast replacable group.
+    - Breaks being able to use upgrade planner to go from vanilla accumulators to FE+ accumulators
