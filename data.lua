@@ -27,7 +27,5 @@ data.raw["electric-pole"]["substation"].fast_replaceable_group = "electric-pole-
 local accum = data.raw["accumulator"];
 local pole  = data.raw["electric-pole"];
 
-for _,accm in pairs(accum) do
-  accm.collision_box = {{-0.7, -0.7}, {0.7, 0.7}}
-  accm.fast_replaceable_group = "accumulator"
-end
+-- data.raw["accumulator"]["accumulator"].collision_box = {{-0.7, -0.7}, {0.7, 0.7}}
+-- data.raw["accumulator"]["accumulator"].fast_replaceable_group = "accumulator"
