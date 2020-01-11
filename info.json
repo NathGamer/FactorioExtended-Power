@@ -5,6 +5,7 @@
   "date": "2019-09-07",
   "title": "FactorioExtended Plus-Power",
   "author": "jimmyjon711 (Original Author: Nath Gamer)",
+  "contributers": "billbo99",
   "homepage": "",
   "description": "",
   "dependencies": ["base >= 0.17.23", "FactorioExtended-Plus-Core >= 0.2.0"]
