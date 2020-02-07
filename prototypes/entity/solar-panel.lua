@@ -7,13 +7,18 @@ end
 -- max_health                               200         400         600
 -- production                               60kW        240kW
 --
-data.raw["solar-panel"]["solar-panel"].fast_replaceable_group = "solar-panel"
+-- If someone has already set the fast_replaceable_group lets use it too
+if not data.raw["solar-panel"]["solar-panel"].fast_replaceable_group then
+    data.raw["solar-panel"]["solar-panel"].fast_replaceable_group = "solar-panel"
+end
+
 data.raw["solar-panel"]["solar-panel"].next_upgrade = "solar-panel-mk2"
 
 local mk2 = table.deepcopy(data.raw["solar-panel"]["solar-panel"])
 mk2.name = "solar-panel-mk2"
 mk2.icon = "__FactorioExtended-Plus-Power__/graphics/icons/" .. mk2.name .. ".png"
 mk2.icon_size = 32
+mk2.icon_mipmaps = nil
 mk2.minable.result = mk2.name
 mk2.max_health = 400
 mk2.next_upgrade = "solar-panel-mk3"
@@ -26,6 +31,7 @@ local mk3 = table.deepcopy(data.raw["solar-panel"]["solar-panel"])
 mk3.name = "solar-panel-mk3"
 mk3.icon = "__FactorioExtended-Plus-Power__/graphics/icons/" .. mk3.name .. ".png"
 mk3.icon_size = 32
+mk3.icon_mipmaps = nil
 mk3.minable.result = mk3.name
 mk3.max_health = 400
 mk3.next_upgrade = nil

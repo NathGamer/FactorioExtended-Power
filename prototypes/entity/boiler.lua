@@ -3,13 +3,17 @@
 -- energy_consumption                       1.8MW       3.6MW       7.2MW
 -- energy_source.emissions_per_minute       30          25          20
 --
-data.raw["boiler"]["boiler"].fast_replaceable_group = "boiler"
+-- If someone has already set the fast_replaceable_group lets use it too
+if not data.raw["boiler"]["boiler"].fast_replaceable_group then
+    data.raw["boiler"]["boiler"].fast_replaceable_group = "boiler"
+end
 data.raw["boiler"]["boiler"].next_upgrade = "boiler-mk2"
 
 local mk2 = table.deepcopy(data.raw["boiler"]["boiler"])
 mk2.name = "boiler-mk2"
 mk2.icon = "__FactorioExtended-Plus-Power__/graphics/icons/" .. mk2.name .. ".png"
 mk2.icon_size = 32
+mk2.icon_mipmaps = nil
 mk2.minable.result = mk2.name
 mk2.max_health = 300
 mk2.energy_consumption = "3.6MW"
@@ -26,6 +30,7 @@ local mk3 = table.deepcopy(data.raw["boiler"]["boiler"])
 mk3.name = "boiler-mk3"
 mk3.icon = "__FactorioExtended-Plus-Power__/graphics/icons/" .. mk3.name .. ".png"
 mk3.icon_size = 32
+mk3.icon_mipmaps = nil
 mk3.minable.result = mk3.name
 mk3.max_health = 600
 mk3.energy_consumption = "7.2MW"

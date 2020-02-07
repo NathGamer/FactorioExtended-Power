@@ -3,13 +3,17 @@
 -- maximum_wire_distance                    30          45          64
 -- supply_area_distance                     2           2           2
 --
-data.raw["electric-pole"]["big-electric-pole"].fast_replaceable_group = "big-electric-pole"
+-- If someone has already set the fast_replaceable_group lets use it too
+if not data.raw["electric-pole"]["big-electric-pole"].fast_replaceable_group then
+    data.raw["electric-pole"]["big-electric-pole"].fast_replaceable_group = "big-electric-pole"
+end
 data.raw["electric-pole"]["big-electric-pole"].next_upgrade = "big-electric-pole-mk2"
 
 local mk2 = table.deepcopy(data.raw["electric-pole"]["big-electric-pole"])
 mk2.name = "big-electric-pole-mk2"
 mk2.icon = "__FactorioExtended-Plus-Power__/graphics/icons/" .. mk2.name .. ".png"
 mk2.icon_size = 32
+mk2.icon_mipmaps = nil
 mk2.minable.result = mk2.name
 mk2.max_health = 400
 mk2.next_upgrade = "big-electric-pole-mk3"
@@ -24,6 +28,7 @@ local mk3 = table.deepcopy(data.raw["electric-pole"]["big-electric-pole"])
 mk3.name = "big-electric-pole-mk3"
 mk3.icon = "__FactorioExtended-Plus-Power__/graphics/icons/" .. mk3.name .. ".png"
 mk3.icon_size = 32
+mk3.icon_mipmaps = nil
 mk3.minable.result = mk3.name
 mk3.max_health = 250
 mk3.next_upgrade = nil

@@ -3,6 +3,9 @@ Version: 0.4.1
 Date: 31. 01. 2020
   Changes :
     - General code refactor
+    - If a mod has set fast_replaceable_group for a technology family lets use it too
+  Fixes :
+    - Cleared icon_mipmaps warnings, until FE+ graphics are updated
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.0
 Date: 21. 01. 2020
