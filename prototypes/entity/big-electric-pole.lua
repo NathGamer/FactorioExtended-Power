@@ -22,6 +22,10 @@ mk2.supply_area_distance = 2
 mk2.resistances = {{type = "fire", percent = 100}}
 
 mk2.pictures.layers[1].filename = "__FactorioExtended-Plus-Power__/graphics/entity/" .. mk2.name .. "/" .. mk2.name .. ".png"
+mk2.pictures.layers[1].width = 74
+mk2.pictures.layers[1].height = 158
+-- mk2.pictures.layers[1].shift = util.by_pixel(0, -52)
+
 mk2.pictures.layers[1].hr_version.filename = "__FactorioExtended-Plus-Power__/graphics/entity/" .. mk2.name .. "/hr-" .. mk2.name .. ".png"
 
 local mk3 = table.deepcopy(data.raw["electric-pole"]["big-electric-pole"])
@@ -37,6 +41,8 @@ mk3.supply_area_distance = 2
 mk3.resistances = {{type = "fire", percent = 100}}
 
 mk3.pictures.layers[1].filename = "__FactorioExtended-Plus-Power__/graphics/entity/" .. mk3.name .. "/" .. mk3.name .. ".png"
+mk3.pictures.layers[1].width = 74
+mk3.pictures.layers[1].height = 158
 mk3.pictures.layers[1].hr_version.filename = "__FactorioExtended-Plus-Power__/graphics/entity/" .. mk3.name .. "/hr-" .. mk3.name .. ".png"
 
 data:extend({mk2, mk3})
