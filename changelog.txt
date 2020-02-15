@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.2
+Date: 15. 02. 2020
+  Fixes :
+    - Fixes substation mk3 wire length and supply area
+    - Fixes normal graphics with mk2/mk3 big power poles
+---------------------------------------------------------------------------------------------------
 Version: 0.4.1
 Date: 31. 01. 2020
   Changes :
