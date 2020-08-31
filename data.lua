@@ -5,6 +5,7 @@ require("prototypes.item.item-solar-panels")
 require("prototypes.item.item-substations")
 require("prototypes.item.item-power-poles")
 require("prototypes.item.item-generators")
+require("prototypes.item.items")
 
 require("prototypes.recipe.recipe-accumulators")
 require("prototypes.recipe.recipe-solar-panels")
