@@ -4,12 +4,6 @@
 -- energy_source.input_flow_limit           300kW       1200kW      4800kW
 -- energy_source.output_flow_limit          300kW       1200kW      4800kW
 --
--- If someone has already set the fast_replaceable_group lets use it too
-if not data.raw["accumulator"]["accumulator"].fast_replaceable_group then
-    data.raw["accumulator"]["accumulator"].fast_replaceable_group = "accumulator"
-end
-data.raw["accumulator"]["accumulator"].next_upgrade = "accumulator-mk2"
-
 local mk2 = table.deepcopy(data.raw["accumulator"]["accumulator"])
 mk2.name = "accumulator-mk2"
 mk2.icon = "__FactorioExtended-Plus-Power__/graphics/icons/accumulator-mk2.png"

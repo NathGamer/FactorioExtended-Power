@@ -3,12 +3,6 @@
 -- effectivity                              1           1.5         2
 -- fluid_usage_per_tick                     0.5         0.75        1
 --
--- If someone has already set the fast_replaceable_group lets use it too
-if not data.raw["generator"]["steam-engine"].fast_replaceable_group then
-    data.raw["generator"]["steam-engine"].fast_replaceable_group = "steam-engine"
-end
-data.raw["generator"]["steam-engine"].next_upgrade = "steam-engine-mk2"
-
 local mk2 = table.deepcopy(data.raw["generator"]["steam-engine"])
 mk2.name = "steam-engine-mk2"
 mk2.icon = "__FactorioExtended-Plus-Power__/graphics/icons/" .. mk2.name .. ".png"
