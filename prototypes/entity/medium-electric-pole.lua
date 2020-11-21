@@ -3,13 +3,6 @@
 -- maximum_wire_distance                    9           12          15
 -- supply_area_distance                     3.5         4.5         5.5
 --
--- If someone has already set the fast_replaceable_group lets use it too
-if not data.raw["electric-pole"]["medium-electric-pole"].fast_replaceable_group then
-    data.raw["electric-pole"]["medium-electric-pole"].fast_replaceable_group = "medium-electric-pole"
-end
-
-data.raw["electric-pole"]["medium-electric-pole"].next_upgrade = "medium-electric-pole-mk2"
-
 local mk2 = table.deepcopy(data.raw["electric-pole"]["medium-electric-pole"])
 mk2.name = "medium-electric-pole-mk2"
 mk2.icon = "__FactorioExtended-Plus-Power__/graphics/icons/" .. mk2.name .. ".png"
