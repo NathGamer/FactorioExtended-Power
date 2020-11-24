@@ -3,6 +3,9 @@ if not data.raw["accumulator"]["accumulator"].fast_replaceable_group then
     data.raw["accumulator"]["accumulator"].fast_replaceable_group = "accumulator"
     data.raw["accumulator"]["accumulator-mk2"].fast_replaceable_group = "accumulator"
     data.raw["accumulator"]["accumulator-mk3"].fast_replaceable_group = "accumulator"
+else
+    data.raw["accumulator"]["accumulator-mk2"].fast_replaceable_group = data.raw["accumulator"]["accumulator"].fast_replaceable_group
+    data.raw["accumulator"]["accumulator-mk3"].fast_replaceable_group = data.raw["accumulator"]["accumulator"].fast_replaceable_group
 end
 
 if not data.raw["accumulator"]["accumulator"].next_upgrade then
@@ -14,6 +17,9 @@ if not data.raw["electric-pole"]["medium-electric-pole"].fast_replaceable_group 
     data.raw["electric-pole"]["medium-electric-pole"].fast_replaceable_group = "medium-electric-pole"
     data.raw["electric-pole"]["medium-electric-pole-mk2"].fast_replaceable_group = "medium-electric-pole"
     data.raw["electric-pole"]["medium-electric-pole-mk3"].fast_replaceable_group = "medium-electric-pole"
+else
+    data.raw["electric-pole"]["medium-electric-pole-mk2"].fast_replaceable_group = data.raw["electric-pole"]["medium-electric-pole"].fast_replaceable_group
+    data.raw["electric-pole"]["medium-electric-pole-mk3"].fast_replaceable_group = data.raw["electric-pole"]["medium-electric-pole"].fast_replaceable_group
 end
 
 if not data.raw["electric-pole"]["medium-electric-pole"].next_upgrade then
@@ -25,6 +31,9 @@ if not data.raw["electric-pole"]["big-electric-pole"].fast_replaceable_group the
     data.raw["electric-pole"]["big-electric-pole"].fast_replaceable_group = "big-electric-pole"
     data.raw["electric-pole"]["big-electric-pole-mk2"].fast_replaceable_group = "big-electric-pole"
     data.raw["electric-pole"]["big-electric-pole-mk3"].fast_replaceable_group = "big-electric-pole"
+else
+    data.raw["electric-pole"]["big-electric-pole-mk2"].fast_replaceable_group = data.raw["electric-pole"]["big-electric-pole"].fast_replaceable_group
+    data.raw["electric-pole"]["big-electric-pole-mk3"].fast_replaceable_group = data.raw["electric-pole"]["big-electric-pole"].fast_replaceable_group
 end
 
 if not data.raw["electric-pole"]["big-electric-pole"].next_upgrade then
@@ -36,6 +45,9 @@ if not data.raw["electric-pole"]["substation"].fast_replaceable_group then
     data.raw["electric-pole"]["substation"].fast_replaceable_group = "electric-pole-2x2"
     data.raw["electric-pole"]["substation-mk2"].fast_replaceable_group = "electric-pole-2x2"
     data.raw["electric-pole"]["substation-mk3"].fast_replaceable_group = "electric-pole-2x2"
+else
+    data.raw["electric-pole"]["substation-mk2"].fast_replaceable_group = data.raw["electric-pole"]["substation"].fast_replaceable_group
+    data.raw["electric-pole"]["substation-mk3"].fast_replaceable_group = data.raw["electric-pole"]["substation"].fast_replaceable_group
 end
 if not data.raw["electric-pole"]["substation"].next_upgrade then
     data.raw["electric-pole"]["substation"].next_upgrade = "substation-mk2"
@@ -46,6 +58,9 @@ if not data.raw["boiler"]["boiler"].fast_replaceable_group then
     data.raw["boiler"]["boiler"].fast_replaceable_group = "boiler"
     data.raw["boiler"]["boiler-mk2"].fast_replaceable_group = "boiler"
     data.raw["boiler"]["boiler-mk3"].fast_replaceable_group = "boiler"
+else
+    data.raw["boiler"]["boiler-mk2"].fast_replaceable_group = data.raw["boiler"]["boiler"].fast_replaceable_group
+    data.raw["boiler"]["boiler-mk3"].fast_replaceable_group = data.raw["boiler"]["boiler"].fast_replaceable_group
 end
 
 if not data.raw["boiler"]["boiler"].next_upgrade then
@@ -57,6 +72,9 @@ if not data.raw["generator"]["steam-engine"].fast_replaceable_group then
     data.raw["generator"]["steam-engine"].fast_replaceable_group = "steam-engine"
     data.raw["generator"]["steam-engine-mk2"].fast_replaceable_group = "steam-engine"
     data.raw["generator"]["steam-engine-mk3"].fast_replaceable_group = "steam-engine"
+else
+    data.raw["generator"]["steam-engine-mk2"].fast_replaceable_group = data.raw["generator"]["steam-engine"].fast_replaceable_group
+    data.raw["generator"]["steam-engine-mk3"].fast_replaceable_group = data.raw["generator"]["steam-engine"].fast_replaceable_group
 end
 if not data.raw["generator"]["steam-engine"].next_upgrade then
     data.raw["generator"]["steam-engine"].next_upgrade = "steam-engine-mk2"
@@ -67,6 +85,9 @@ if not data.raw["solar-panel"]["solar-panel"].fast_replaceable_group then
     data.raw["solar-panel"]["solar-panel"].fast_replaceable_group = "solar-panel"
     data.raw["solar-panel"]["solar-panel-mk2"].fast_replaceable_group = "solar-panel"
     data.raw["solar-panel"]["solar-panel-mk3"].fast_replaceable_group = "solar-panel"
+else
+    data.raw["solar-panel"]["solar-panel-mk2"].fast_replaceable_group = data.raw["solar-panel"]["solar-panel"].fast_replaceable_group
+    data.raw["solar-panel"]["solar-panel-mk3"].fast_replaceable_group = data.raw["solar-panel"]["solar-panel"].fast_replaceable_group
 end
 
 if not data.raw["solar-panel"]["solar-panel"].next_upgrade then
